@@ -6,7 +6,76 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initSmartMatchModal();
     initExitIntentToast();
+    initCursorGlow();
+    initScrollRotateTitles();
 });
+
+/* ---------------------------------------------------------------- */
+/* Cursor-follow ambient background glow (fine-pointer devices only) */
+/* ---------------------------------------------------------------- */
+function initCursorGlow() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const hasFinePointer = window.matchMedia('(pointer: fine)').matches;
+    if (prefersReducedMotion || !hasFinePointer) return;
+
+    const glow = document.createElement('div');
+    glow.className = 'cursor-glow';
+    glow.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(glow);
+
+    let targetX = window.innerWidth / 2;
+    let targetY = window.innerHeight / 2;
+    let currentX = targetX;
+    let currentY = targetY;
+
+    window.addEventListener('mousemove', (e) => {
+        targetX = e.clientX;
+        targetY = e.clientY;
+    });
+
+    (function animate() {
+        currentX += (targetX - currentX) * 0.08;
+        currentY += (targetY - currentY) * 0.08;
+        glow.style.transform = `translate(${currentX - 300}px, ${currentY - 300}px)`;
+        requestAnimationFrame(animate);
+    })();
+}
+
+/* ---------------------------------------------------------------- */
+/* Hero/main title 3D scroll-rotate                                  */
+/* ---------------------------------------------------------------- */
+function initScrollRotateTitles() {
+    const titles = document.querySelectorAll('.scroll-rotate-title');
+    if (!titles.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    let ticking = false;
+
+    function update() {
+        const viewportOffset = window.innerHeight * 0.15;
+        titles.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            const progress = Math.min(
+                Math.max((viewportOffset - rect.top) / (rect.height + viewportOffset), 0),
+                1
+            );
+            el.style.transform = `perspective(1200px) rotateX(${progress * 35}deg) translateY(${progress * -30}px)`;
+            el.style.opacity = String(1 - progress * 0.9);
+        });
+        ticking = false;
+    }
+
+    function onScroll() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    update();
+}
 
 /* ---------------------------------------------------------------- */
 /* Mobile nav toggle                                                 */

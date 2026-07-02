@@ -31,6 +31,33 @@ body {
     background-position: center;
 }
 
+/* Cursor-follow ambient glow, injected by js/main.js on pointer-fine devices */
+.cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    border-radius: 9999px;
+    background: radial-gradient(circle, rgba(13, 148, 136, 0.16) 0%, rgba(13, 148, 136, 0) 70%);
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: screen;
+    will-change: transform;
+}
+
+/* Hero/main title 3D rotate-away as the page scrolls past it */
+.scroll-rotate-title {
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor-glow {
+        display: none;
+    }
+}
+
 /* Mobile nav menu */
 #mobile-menu.hidden {
     display: none;
