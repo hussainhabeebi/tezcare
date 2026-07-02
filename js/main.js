@@ -5,7 +5,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initSmartMatchModal();
-    initChatCarousel();
     initExitIntentToast();
 });
 
@@ -171,115 +170,6 @@ function initSmartMatchModal() {
             showState(state4);
         });
     }
-}
-
-/* ---------------------------------------------------------------- */
-/* Chat card carousel ("Real Response Time" section)                 */
-/* ---------------------------------------------------------------- */
-function initChatCarousel() {
-    const convoArea = document.getElementById('chat-convo-area');
-    const dotsWrap = document.getElementById('chat-dots');
-    const prevBtn = document.getElementById('chat-prev-btn');
-    const nextBtn = document.getElementById('chat-next-btn');
-    const headline = document.getElementById('chat-headline');
-    const subtext = document.getElementById('chat-subtext');
-    if (!convoArea) return;
-
-    const scenarios = [
-        {
-            headline: 'When Every Minute Counts, We Answer.',
-            subtext: "Care home managers across the UK trust TezCare because when a shift falls through at 10pm, we don't send an email — we send staff.",
-            messages: [
-                { from: 'in', text: "Hi, we've just had a night HCA call in sick for tonight's 8pm shift. Can you help?" },
-                { from: 'out', text: "On it. Checking DBS-cleared staff within your postcode now." },
-                { from: 'out', text: "Found 3 available HCAs. Sending profiles to your WhatsApp." },
-                { from: 'in', text: 'That was fast — thank you!' }
-            ]
-        },
-        {
-            headline: 'Block Bookings, Handled in One Message.',
-            subtext: 'Need recurring cover for the month? One conversation sets up a rolling roster your coordinator manages end to end.',
-            messages: [
-                { from: 'in', text: 'We need weekend RGN cover for the next 6 weeks.' },
-                { from: 'out', text: 'Understood. Setting up a recurring booking for Sat/Sun days.' },
-                { from: 'out', text: 'Compliance packs will land in your inbox before each shift.' },
-                { from: 'in', text: 'Perfect, exactly what we needed.' }
-            ]
-        },
-        {
-            headline: 'Real Humans. Real Compliance. Every Time.',
-            subtext: "No chatbots, no call queues — just a coordinator who knows your facility and answers with a fully vetted match.",
-            messages: [
-                { from: 'in', text: 'Can you confirm the DBS status for tomorrow’s cover?' },
-                { from: 'out', text: 'Confirmed — Enhanced DBS, training certs and references all verified.' },
-                { from: 'out', text: 'Digital compliance pack attached.' },
-                { from: 'in', text: 'Great, that saves us a call to head office.' }
-            ]
-        }
-    ];
-
-    let current = 0;
-    let typingTimeout;
-
-    function renderDots() {
-        if (!dotsWrap) return;
-        dotsWrap.innerHTML = scenarios.map((_, i) =>
-            `<span class="chat-dot ${i === current ? 'active' : ''}" data-index="${i}"></span>`
-        ).join('');
-        dotsWrap.querySelectorAll('.chat-dot').forEach((dot) => {
-            dot.addEventListener('click', () => {
-                current = parseInt(dot.dataset.index, 10);
-                render();
-            });
-        });
-    }
-
-    function render() {
-        clearTimeout(typingTimeout);
-        const scenario = scenarios[current];
-        if (headline) {
-            headline.classList.remove('chat-narrative-text');
-            void headline.offsetWidth;
-            headline.textContent = scenario.headline;
-            headline.classList.add('chat-narrative-text');
-        }
-        if (subtext) {
-            subtext.classList.remove('chat-narrative-text');
-            void subtext.offsetWidth;
-            subtext.textContent = scenario.subtext;
-            subtext.classList.add('chat-narrative-text');
-        }
-        convoArea.innerHTML = '';
-        scenario.messages.forEach((msg, i) => {
-            typingTimeout = setTimeout(() => {
-                const bubble = document.createElement('div');
-                bubble.className = `chat-bubble ${msg.from === 'in' ? 'incoming' : 'outgoing'}`;
-                bubble.textContent = msg.text;
-                bubble.style.opacity = '0';
-                convoArea.appendChild(bubble);
-                requestAnimationFrame(() => {
-                    bubble.style.transition = 'opacity 0.3s ease';
-                    bubble.style.opacity = '1';
-                });
-            }, i * 350);
-        });
-        renderDots();
-    }
-
-    if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-            current = (current - 1 + scenarios.length) % scenarios.length;
-            render();
-        });
-    }
-    if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-            current = (current + 1) % scenarios.length;
-            render();
-        });
-    }
-
-    render();
 }
 
 /* ---------------------------------------------------------------- */
