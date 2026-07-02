@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>TezCare | Request Staff</title>
+    <meta name="description" content="Request fully vetted nurses and healthcare assistants for your care home instantly. Contact TezCare for premium UK healthcare staffing.">
+    <link rel="icon" type="image/png" href="images/tezcare-heart.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "teal-brand": "#0D9488",
+              "navy-brand": "#0A1628",
+              "navy-deep": "#060d18",
+              "navy-light": "#1e2a3b",
+              "primary": "#0D9488",
+              "on-primary": "#ffffff",
+              "surface": "#0A1628",
+              "on-surface": "#ffffff",
+              "on-surface-variant": "#94a3b8"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "poppins": ["Poppins"]
+            }
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-navy-gradient { background: linear-gradient(180deg, #0A1628 0%, #060d18 100%); }
+            .glass-morphism { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+            .cinematic-overlay { background: linear-gradient(to bottom, rgba(10, 22, 40, 0.85), rgba(10, 22, 40, 0.95)); }
+            .cinematic-overlay-teal { background: linear-gradient(to bottom, rgba(13, 148, 136, 0.15), rgba(10, 22, 40, 0.98)); }
+            .text-glow { text-shadow: 0 0 20px rgba(13, 148, 136, 0.4); }
+            .topography-pattern { background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 380c20-10 40-10 60 0s40 10 60 0 40-10 60 0 40 10 60 0 40-10 60 0 40 10 60 0v20H0v-20z' fill='%230D9488' fill-opacity='0.05'/%3E%3C/svg%3E"); }
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-teal-brand selection:text-white">
+
+<div class="bg-teal-brand/90 backdrop-blur-sm text-white py-2 px-4 text-center text-xs font-bold uppercase tracking-[0.2em] relative z-[60]">
+    24/7 Support: Compliant Staff in Under 60 Minutes
+</div>
+
+<nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
+    <div class="w-full max-w-6xl glass-morphism rounded-3xl md:rounded-full px-6 py-3 flex flex-col md:flex-row md:justify-between md:items-center shadow-2xl relative">
+        <div class="flex justify-between items-center w-full md:w-auto">
+            <a class='flex flex-shrink-0 items-center' href='index.html'>
+                <img src="images/logo-full.png" alt="TezCare" style="height: 44px;">
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-teal-brand transition-colors flex items-center">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:flex flex-col md:flex-row gap-6 md:gap-10 items-center mt-6 md:mt-0 pb-4 md:pb-0 w-full md:w-auto border-t border-white/10 md:border-t-0 pt-4 md:pt-0">
+            <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='index.html'>Homepage</a>
+            <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='about.html'>About</a>
+            <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='services.html'>Service</a>
+            <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='why-tezcare.html'>Why TezCare</a>
+            <button onclick="window.location.href='contact.html';" class="md:hidden w-full bg-teal-brand hover:bg-teal-600 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg shadow-teal-brand/20">
+                Book A Staff
+            </button>
+        </div>
+        <button onclick="window.location.href='contact.html';" class="hidden md:block bg-teal-brand hover:bg-teal-600 text-white px-6 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-teal-brand/20 whitespace-nowrap">
+            Book A Staff
+        </button>
+    </div>
+</nav>
+
+<main class="pt-[140px] md:pt-[180px] pb-32">
+
+    <section class="bg-navy-brand relative border-white/5">
+        <div class="absolute inset-0 topography-pattern opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-teal-brand/20 border border-teal-brand/30 text-teal-brand text-xs font-bold uppercase tracking-widest mb-6">
+                    Partner With Us
+                </span>
+                <h1 class="text-4xl md:text-6xl font-headline font-extrabold text-white leading-tight mb-6">Request Staffing Coverage</h1>
+                <p class="text-lg md:text-xl text-slate-400 leading-relaxed">
+                    Please submit your staffing request below. Our 24/7 deployment team will contact you within the hour with matched candidate profiles.
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-navy-deep rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-brand to-[#116660]"></div>
+
+                <form id="contact-form" action="https://formspree.io/f/mpqorwzb" method="POST" class="space-y-6">
+                    <div>
+                        <label for="care-home-name" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Care Home / Facility Name *</label>
+                        <input type="text" id="care-home-name" name="Care Home Name" required placeholder="Enter facility name"
+                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all placeholder:text-slate-500">
+                    </div>
+
+                    <div>
+                        <label for="location" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Location / Postcode *</label>
+                        <input type="text" id="location" name="Location" required placeholder="e.g. SW1A 1AA"
+                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all placeholder:text-slate-500">
+                    </div>
+
+                    <div>
+                        <label for="role-required" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Role Required *</label>
+                        <select id="role-required" name="Role Required" required
+                                class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all appearance-none cursor-pointer">
+                            <option value="" disabled selected class="text-slate-500">Select the role needed</option>
+                            <option value="Registered General Nurse (RGN)" class="text-navy-brand">Registered General Nurse (RGN)</option>
+                            <option value="Registered Mental Nurse (RMN)" class="text-navy-brand">Registered Mental Nurse (RMN)</option>
+                            <option value="Healthcare Assistant (HCA)" class="text-navy-brand">Healthcare Assistant (HCA)</option>
+                            <option value="Support Worker" class="text-navy-brand">Support Worker</option>
+                            <option value="Multiple Roles" class="text-navy-brand">Multiple Roles</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="shift-date" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Shift Date(s) & Time *</label>
+                        <input type="text" id="shift-date" name="Shift Date" required placeholder="e.g. Tomorrow 08:00 - 20:00"
+                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all placeholder:text-slate-500">
+                    </div>
+
+                    <div>
+                        <label for="additional-notes" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Special Requirements / Notes</label>
+                        <textarea id="additional-notes" name="Additional Notes" rows="4" placeholder="Any specific skills required, e.g. MAPA trained..."
+                                  class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all placeholder:text-slate-500 resize-y"></textarea>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-teal-brand hover:bg-teal-600 text-white rounded-xl font-bold text-lg py-5 transition-all shadow-lg shadow-teal-brand/20 hover:-translate-y-1">
+                            Submit Request
+                        </button>
+                    </div>
+
+                    <p class="text-center text-sm text-slate-400 mt-6 pb-2">
+                        For immediate emergencies, please call <a href="tel:08001234567" class="text-teal-brand font-bold hover:underline">0800 123 4567</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- BRANDED FOOTER -->
+<footer class="bg-[#0f172a] pt-24 pb-8 border-t border-white/5 font-body">
+    <div class="max-w-[1200px] mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 items-start justify-between mb-20">
+
+            <!-- Column 1: Brand -->
+            <div class="space-y-6">
+                <a class='flex items-center' href='index.html'>
+                    <img src="images/logo-full.png" alt="TezCare" class="h-10">
+                </a>
+                <p class="text-[#94A3B8] font-bold text-sm tracking-wide">Honouring Humanity.</p>
+                <p class="text-[#94A3B8] text-sm leading-[1.8]">
+                    Director-led clinical staffing. Operating to CQC Fundamental Standards.
+                </p>
+            </div>
+
+            <!-- Column 2: Company -->
+            <div>
+                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Company</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='about.html'>About Us</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='why-tezcare.html'>Why TezCare</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='contact.html'>Join the Roster</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='why-tezcare.html'>Clinical Audit</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Services -->
+            <div>
+                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Services</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Residential HCA</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Complex Care</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Emergency Cover</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Specialist Staffing</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact -->
+            <div>
+                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Contact</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="text-[#94A3B8] leading-[1.8]">
+                        Suite 2.04, The Keep, Creech Castle, Bathpool, Taunton, Somerset - TA1 2DX.
+                    </li>
+                    <li>
+                        <a href="tel:+447553619872" class="text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all">+44 7553619872</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- LEGAL BAR -->
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500">
+                <span>© 2026 TezCare.</span>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="hover:text-teal-brand transition-all">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-teal-brand transition-all">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-teal-brand transition-all">Cookie Policy</a>
+                </div>
+            </div>
+            <p class="text-slate-500 text-sm font-medium text-right">Somerset's Clinical Staffing Partner</p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
