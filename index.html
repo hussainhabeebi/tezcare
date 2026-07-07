@@ -40,9 +40,9 @@
                 background: linear-gradient(180deg, #0A1628 0%, #060d18 100%);
             }
             .glass-morphism {
-                background: rgba(255, 255, 255, 0.03);
+                background: rgba(255, 255, 255, 0.65);
                 backdrop-filter: blur(12px);
-                border: 1px solid rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(10, 22, 40, 0.08);
             }
             .cinematic-overlay {
                 background: linear-gradient(to bottom, rgba(10, 22, 40, 0.85), rgba(10, 22, 40, 0.95));
@@ -66,7 +66,7 @@
     </style>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
+<body class="bg-white font-body text-slate-700 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
 <nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
 <div class="w-full max-w-6xl bg-white rounded-3xl md:rounded-full px-6 py-3 flex flex-col md:flex-row md:justify-between md:items-center shadow-2xl relative">
 <div class="flex justify-between items-center w-full md:w-auto">
@@ -91,18 +91,13 @@
         </button>
 </div>
 </nav>
-<section class="relative min-h-screen flex items-center overflow-hidden bg-navy-gradient">
+<section class="relative min-h-screen flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
-<div class="absolute inset-0 topography-pattern opacity-40"></div>
-<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red/20 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4"></div>
-<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4"></div>
-<svg class="absolute inset-0 w-full h-full opacity-20" preserveAspectRatio="none" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 620 L250 620 L290 520 L340 700 L390 460 L430 620 L1200 620" fill="none" stroke="#EB1922" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-<div class="absolute inset-0 cinematic-overlay-teal"></div>
+<img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80" alt="Healthcare Team" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-r from-navy-brand via-navy-brand/85 to-navy-brand/30"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-navy-brand/80 via-transparent to-transparent"></div>
 </div>
 <div class="max-w-7xl mx-auto px-8 relative z-10 w-full pt-20">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 <div class="max-w-2xl">
 <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-brand-red/20 border border-brand-red/30 text-brand-red text-xs font-bold uppercase tracking-widest mb-8">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
@@ -111,7 +106,7 @@
 <h1 class="scroll-rotate-title text-5xl md:text-7xl font-headline font-extrabold text-white leading-tight mb-8 tracking-tighter" style="overflow: hidden; padding-bottom: 0.1em;">
                 Precision Staffing for the UK <span class="italic">Healthcare</span> Sector
             </h1>
-<p class="text-xl md:text-2xl text-slate-300 max-w-2xl mb-12 leading-relaxed">
+<p class="text-xl md:text-2xl text-slate-200 max-w-2xl mb-12 leading-relaxed">
                 Vetted, compliant, and ready to work — the partner care homes and hospitals trust for reliable clinical excellence.
             </p>
 <div class="flex flex-col sm:flex-row gap-6 w-full">
@@ -119,30 +114,27 @@
                     Request Staff Now
                     <span class="material-symbols-outlined">arrow_forward</span>
 </button>
-<button onclick="window.location.href='about.html';" class="w-full sm:w-auto px-10 py-5 rounded-full bg-white/5 backdrop-blur-md text-white border border-white/10 font-bold text-lg hover:bg-white/10 transition-all text-center uppercase tracking-widest">
+<button onclick="window.location.href='about.html';" class="w-full sm:w-auto px-10 py-5 rounded-full bg-white/10 backdrop-blur-md text-white border border-white/20 font-bold text-lg hover:bg-white/20 transition-all text-center uppercase tracking-widest">
                     ABOUT TEZCARE
                 </button>
 </div>
+<div class="mt-14 glass-morphism p-6 rounded-3xl inline-flex max-w-md">
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3 flex-shrink-0">
+<div class="w-10 h-10 rounded-full border-2 border-white bg-brand-red/20 flex items-center justify-center text-brand-red text-xs font-bold">RN</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-brand-red/30 flex items-center justify-center text-brand-red text-xs font-bold">HCA</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-brand-red flex items-center justify-center text-white text-xs font-bold">+2k</div>
 </div>
-<div class="relative w-full h-[420px] md:h-[520px] rounded-[2rem] overflow-hidden glass-morphism border-brand-red/20 p-2 shadow-2xl">
-<img src="images/team.png" alt="The TezCare Team" class="w-full h-full object-cover rounded-[1.5rem]">
-<div class="absolute inset-0 bg-gradient-to-t from-navy-brand via-transparent to-transparent opacity-70 rounded-[2rem]"></div>
-<div class="absolute bottom-6 left-6 right-6 glass-morphism p-6 rounded-3xl">
-<div class="flex items-center gap-4 mb-4">
-<div class="flex -space-x-3">
-<div class="w-10 h-10 rounded-full border-2 border-navy-brand bg-brand-red/20 flex items-center justify-center text-brand-red text-xs font-bold">RN</div>
-<div class="w-10 h-10 rounded-full border-2 border-navy-brand bg-brand-red/30 flex items-center justify-center text-brand-red text-xs font-bold">HCA</div>
-<div class="w-10 h-10 rounded-full border-2 border-navy-brand bg-brand-red flex items-center justify-center text-white text-xs font-bold">+2k</div>
+<div>
+<p class="text-sm font-bold text-navy-brand">DBS-Cleared Local Staff</p>
+<p class="text-xs text-slate-600">Fully vetted and ready for immediate deployment in your area.</p>
 </div>
-</div>
-<p class="text-sm font-bold text-white">DBS-Cleared Local Staff</p>
-<p class="text-xs text-slate-400">Fully vetted and ready for immediate deployment in your area.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="py-16 bg-navy-brand border-y border-white/5 relative">
+<section class="py-16 bg-white border-y border-slate-200 relative">
 <div class="max-w-7xl mx-auto px-8">
 <p class="text-center text-xs font-bold text-slate-500 uppercase tracking-[0.3em] mb-12">Our 5-Stage Compliance Protocol</p>
 <div class="flex flex-wrap justify-center md:justify-between items-center gap-10">
@@ -151,45 +143,45 @@
 <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EB1922" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
 </div>
-<span class="text-white font-bold text-sm">Enhanced DBS<br/><span class="text-slate-400 font-normal text-xs">Checked</span></span>
+<span class="text-navy-brand font-bold text-sm">Enhanced DBS<br/><span class="text-slate-500 font-normal text-xs">Checked</span></span>
 </div>
 <!-- Stage 2 -->
 <div class="flex items-center gap-3">
 <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EB1922" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 4 6 4s6-2 6-4v-5"/></svg>
 </div>
-<span class="text-white font-bold text-sm">Mandatory Training<br/><span class="text-slate-400 font-normal text-xs">Verified</span></span>
+<span class="text-navy-brand font-bold text-sm">Mandatory Training<br/><span class="text-slate-500 font-normal text-xs">Verified</span></span>
 </div>
 <!-- Stage 3 -->
 <div class="flex items-center gap-3">
 <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EB1922" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="7" y1="15" x2="7.01" y2="15"/><line x1="12" y1="15" x2="17" y2="15"/></svg>
 </div>
-<span class="text-white font-bold text-sm">Right to Work<br/><span class="text-slate-400 font-normal text-xs">Validated</span></span>
+<span class="text-navy-brand font-bold text-sm">Right to Work<br/><span class="text-slate-500 font-normal text-xs">Validated</span></span>
 </div>
 <!-- Stage 4 -->
 <div class="flex items-center gap-3">
 <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EB1922" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
 </div>
-<span class="text-white font-bold text-sm">Reference<br/><span class="text-slate-400 font-normal text-xs">Verified</span></span>
+<span class="text-navy-brand font-bold text-sm">Reference<br/><span class="text-slate-500 font-normal text-xs">Verified</span></span>
 </div>
 <!-- Stage 5 -->
 <div class="flex items-center gap-3">
 <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EB1922" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l5 0M20 14l0-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6"/><circle cx="10" cy="10" r="3"/><path d="M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="m22 22-1.5-1.5"/></svg>
 </div>
-<span class="text-white font-bold text-sm">Interview<br/><span class="text-slate-400 font-normal text-xs">Screened</span></span>
+<span class="text-navy-brand font-bold text-sm">Interview<br/><span class="text-slate-500 font-normal text-xs">Screened</span></span>
 </div>
 </div>
 </div>
 </section>
-<section class="py-32 relative bg-navy-brand overflow-hidden">
+<section class="py-32 relative bg-slate-50 overflow-hidden">
 <div class="max-w-7xl mx-auto px-8 relative z-10">
 <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-12">
 <div class="max-w-3xl">
-<h2 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight text-white mb-8">Specialist staffing tailored to <span class="italic">your needs.</span></h2>
-<p class="text-slate-400 text-xl leading-relaxed">From emergency shift cover to long-term staffing solutions, we provide the right talent at the right time.</p>
+<h2 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight text-navy-brand mb-8">Specialist staffing tailored to <span class="italic">your needs.</span></h2>
+<p class="text-slate-500 text-xl leading-relaxed">From emergency shift cover to long-term staffing solutions, we provide the right talent at the right time.</p>
 </div>
 <a class='flex items-center gap-3 text-brand-red font-bold text-lg group h-fit mb-4' href='services.html'>
                 Explore all services
@@ -197,46 +189,56 @@
 </a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-<div class="group p-10 rounded-3xl bg-navy-light/30 border border-white/5 hover:border-brand-red/30 transition-all duration-500 flex flex-col h-full">
+<div class="group rounded-3xl bg-white border border-slate-200 hover:border-brand-red/30 shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col h-full overflow-hidden">
+<div class="w-full h-56 overflow-hidden">
+<img src="https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=800&q=80" alt="Care worker supporting an elderly resident" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+</div>
+<div class="p-10 flex flex-col flex-grow">
 <div class="w-14 h-14 rounded-xl bg-brand-red/10 flex items-center justify-center mb-8">
 <span class="material-symbols-outlined text-brand-red text-3xl">home_health</span>
 </div>
-<h3 class="text-2xl font-headline font-bold mb-6 text-white text-center">Care Home Staffing</h3>
-<p class="text-slate-400 mb-8 text-lg flex-grow leading-relaxed">Dedicated support workers and registered nurses specifically trained for residential and nursing care environments.</p>
+<h3 class="text-2xl font-headline font-bold mb-6 text-navy-brand text-center">Care Home Staffing</h3>
+<p class="text-slate-500 mb-8 text-lg flex-grow leading-relaxed">Dedicated support workers and registered nurses specifically trained for residential and nursing care environments.</p>
 <div class="space-y-4">
-<div class="flex items-center gap-3 text-sm font-medium text-slate-300">
+<div class="flex items-center gap-3 text-sm font-medium text-slate-600">
 <span class="material-symbols-outlined text-brand-red text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span> Dementia Specialists
                     </div>
-<div class="flex items-center gap-3 text-sm font-medium text-slate-300">
+<div class="flex items-center gap-3 text-sm font-medium text-slate-600">
 <span class="material-symbols-outlined text-brand-red text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span> Night Cover Support
                     </div>
 </div>
 </div>
-<div class="group p-10 rounded-3xl bg-navy-light/30 border border-white/5 hover:border-brand-red/30 transition-all duration-500 flex flex-col h-full">
+</div>
+<div class="group rounded-3xl bg-white border border-slate-200 hover:border-brand-red/30 shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col h-full overflow-hidden">
+<div class="w-full h-56 overflow-hidden">
+<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="Clinical staff member reviewing patient care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+</div>
+<div class="p-10 flex flex-col flex-grow">
 <div class="w-14 h-14 rounded-xl bg-brand-red/10 flex items-center justify-center mb-8">
 <span class="material-symbols-outlined text-brand-red text-3xl">domain</span>
 </div>
-<h3 class="text-2xl font-headline font-bold mb-6 text-white text-center">Hospital Staffing</h3>
-<p class="text-slate-400 mb-8 text-lg flex-grow leading-relaxed">Rapid response clinical teams for NHS trusts and private hospitals. Fully vetted according to strict NHS framework standards.</p>
+<h3 class="text-2xl font-headline font-bold mb-6 text-navy-brand text-center">Hospital Staffing</h3>
+<p class="text-slate-500 mb-8 text-lg flex-grow leading-relaxed">Rapid response clinical teams for NHS trusts and private hospitals. Fully vetted according to strict NHS framework standards.</p>
 <div class="space-y-4">
-<div class="flex items-center gap-3 text-sm font-medium text-slate-300">
+<div class="flex items-center gap-3 text-sm font-medium text-slate-600">
 <span class="material-symbols-outlined text-brand-red text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span> A&amp;E &amp; ICU Staffing
                     </div>
-<div class="flex items-center gap-3 text-sm font-medium text-slate-300">
+<div class="flex items-center gap-3 text-sm font-medium text-slate-600">
 <span class="material-symbols-outlined text-brand-red text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span> Theatres &amp; Anaesthetics
                     </div>
 </div>
 </div>
 </div>
 </div>
+</div>
 </section>
 <!-- How It Works -->
-<section class="py-[100px] bg-navy-brand relative overflow-hidden">
+<section class="py-[100px] bg-white relative overflow-hidden">
 <div class="max-w-7xl mx-auto px-8 relative z-10">
 <div class="flex flex-col items-center text-center mb-16">
-<span class="text-white font-bold text-sm tracking-widest uppercase pl-4 border-l-4 border-brand-red mb-6">How It Works</span>
-<h2 class="font-poppins font-bold text-[40px] text-white leading-tight tracking-[-0.02em] mb-4">Simple, Fast, Compliant Staffing</h2>
-<p class="font-poppins font-normal text-lg text-white max-w-2xl">Three steps to get fully vetted staff deployed to your facility</p>
+<span class="text-navy-brand font-bold text-sm tracking-widest uppercase pl-4 border-l-4 border-brand-red mb-6">How It Works</span>
+<h2 class="font-poppins font-bold text-[40px] text-navy-brand leading-tight tracking-[-0.02em] mb-4">Simple, Fast, Compliant Staffing</h2>
+<p class="font-poppins font-normal text-lg text-slate-500 max-w-2xl">Three steps to get fully vetted staff deployed to your facility</p>
 </div>
 <div class="relative">
 <!-- Dotted Connector Line -->
@@ -246,50 +248,50 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
 <div class="flex flex-col items-center text-center">
 <div class="w-24 h-24 rounded-full bg-brand-red flex items-center justify-center text-white text-3xl font-bold shadow-xl shadow-brand-red/20 mb-8">1</div>
-<h3 class="text-white font-bold text-xl mb-4 font-poppins">Post Your Vacancy</h3>
-<p class="text-[#94A3B8] font-poppins text-base leading-relaxed max-w-[280px]">Tell us your shift requirements, location and compliance needs.</p>
+<h3 class="text-navy-brand font-bold text-xl mb-4 font-poppins">Post Your Vacancy</h3>
+<p class="text-slate-500 font-poppins text-base leading-relaxed max-w-[280px]">Tell us your shift requirements, location and compliance needs.</p>
 </div>
 <div class="flex flex-col items-center text-center">
 <div class="w-24 h-24 rounded-full bg-brand-red flex items-center justify-center text-white text-3xl font-bold shadow-xl shadow-brand-red/20 mb-8">2</div>
-<h3 class="text-white font-bold text-xl mb-4 font-poppins">We Match and Vet</h3>
-<p class="text-[#94A3B8] font-poppins text-base leading-relaxed max-w-[280px]">Our system identifies fully compliant, local, qualified staff instantly.</p>
+<h3 class="text-navy-brand font-bold text-xl mb-4 font-poppins">We Match and Vet</h3>
+<p class="text-slate-500 font-poppins text-base leading-relaxed max-w-[280px]">Our system identifies fully compliant, local, qualified staff instantly.</p>
 </div>
 <div class="flex flex-col items-center text-center">
 <div class="w-24 h-24 rounded-full bg-brand-red flex items-center justify-center text-white text-3xl font-bold shadow-xl shadow-brand-red/20 mb-8">3</div>
-<h3 class="text-white font-bold text-xl mb-4 font-poppins">Staff Deployed</h3>
-<p class="text-[#94A3B8] font-poppins text-base leading-relaxed max-w-[280px]">Vetted staff confirmed and on-site, often within 60 minutes.</p>
+<h3 class="text-navy-brand font-bold text-xl mb-4 font-poppins">Staff Deployed</h3>
+<p class="text-slate-500 font-poppins text-base leading-relaxed max-w-[280px]">Vetted staff confirmed and on-site, often within 60 minutes.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
 
-<section class="py-32 relative bg-navy-deep">
-<div class="absolute inset-0 topography-pattern opacity-5"></div>
+<section class="py-32 relative bg-slate-50">
+<div class="absolute inset-0 topography-pattern opacity-30"></div>
 <div class="max-w-7xl mx-auto px-8 relative z-10">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
 <div class="space-y-12">
-<h2 class="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white">Your Audit-Ready Partner.</h2>
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-navy-brand">Your Audit-Ready Partner.</h2>
 <div class="space-y-10">
 <div class="flex gap-8 group">
 <div class="flex-shrink-0 w-16 h-16 rounded-2xl bg-brand-red/10 border border-brand-red/30 text-brand-red flex items-center justify-center font-bold font-headline text-2xl group-hover:bg-brand-red group-hover:text-white transition-all duration-300">1</div>
 <div>
-<h4 class="text-2xl font-bold text-white mb-3">Instant Digital Vetting</h4>
-<p class="text-slate-400 text-lg leading-relaxed">Access full compliance docs including Enhanced DBS and training certs before the shift starts.</p>
+<h4 class="text-2xl font-bold text-navy-brand mb-3">Instant Digital Vetting</h4>
+<p class="text-slate-500 text-lg leading-relaxed">Access full compliance docs including Enhanced DBS and training certs before the shift starts.</p>
 </div>
 </div>
 <div class="flex gap-8 group">
 <div class="flex-shrink-0 w-16 h-16 rounded-2xl bg-brand-red/10 border border-brand-red/30 text-brand-red flex items-center justify-center font-bold font-headline text-2xl group-hover:bg-brand-red group-hover:text-white transition-all duration-300">2</div>
 <div>
-<h4 class="text-2xl font-bold text-white mb-3">Real-Time Staff Matching</h4>
-<p class="text-slate-400 text-lg leading-relaxed">Our system matches local Support Workers based on your specific facility requirements.</p>
+<h4 class="text-2xl font-bold text-navy-brand mb-3">Real-Time Staff Matching</h4>
+<p class="text-slate-500 text-lg leading-relaxed">Our system matches local Support Workers based on your specific facility requirements.</p>
 </div>
 </div>
 <div class="flex gap-8 group">
 <div class="flex-shrink-0 w-16 h-16 rounded-2xl bg-brand-red/10 border border-brand-red/30 text-brand-red flex items-center justify-center font-bold font-headline text-2xl group-hover:bg-brand-red group-hover:text-white transition-all duration-300">3</div>
 <div>
-<h4 class="text-2xl font-bold text-white mb-3">Automated Compliance Logs</h4>
-<p class="text-slate-400 text-lg leading-relaxed">Download timestamped deployment records for your internal audits and CQC inspections.</p>
+<h4 class="text-2xl font-bold text-navy-brand mb-3">Automated Compliance Logs</h4>
+<p class="text-slate-500 text-lg leading-relaxed">Download timestamped deployment records for your internal audits and CQC inspections.</p>
 </div>
 </div>
 </div>
@@ -323,7 +325,7 @@
 <button class="w-full py-5 bg-navy-brand text-white rounded-2xl font-bold text-lg hover:bg-brand-red transition-all shadow-xl">
                         View Compliance Vault
                     </button>
-<p class="text-center mt-6 text-slate-400 text-sm font-medium">Digital compliance packs sent for every placement.</p>
+<p class="text-center mt-6 text-slate-500 text-sm font-medium">Digital compliance packs sent for every placement.</p>
 </div>
 </div>
 </div>

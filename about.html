@@ -36,9 +36,14 @@
     <style type="text/tailwindcss">
         @layer utilities {
             .glass-morphism {
-                background: rgba(255, 255, 255, 0.03);
+                background: rgba(255, 255, 255, 0.65);
                 backdrop-filter: blur(12px);
-                border: 1px solid rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(10, 22, 40, 0.08);
+            }
+            .glass-dark {
+                background: rgba(10, 22, 40, 0.55);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.15);
             }
             .scroll-animate {
                 opacity: 0;
@@ -53,7 +58,7 @@
     </style>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
+<body class="bg-white font-body text-slate-700 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
 
 <!-- Global Navigation -->
 <nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
@@ -85,23 +90,26 @@
 <section class="pt-48 pb-24 relative overflow-hidden text-center max-w-5xl mx-auto px-8">
   <img src="images/tezcare-heart.png" alt="TezCare Integrity" class="w-16 h-16 mx-auto mb-8 animate-[pulse_2s_ease-in-out_infinite] drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">
 
-  <h1 class="scroll-rotate-title text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white mb-8">
+  <h1 class="scroll-rotate-title text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-navy-brand mb-8">
       The Agency Model is Broken.<br><span class="italic">We Built the Fix.</span>
   </h1>
-  <p class="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-4xl mx-auto">
+  <p class="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-4xl mx-auto mb-16">
     For too long, Somerset care homes have settled for unverified staff and chronic no-shows. Founded in Taunton by clinical professionals who witnessed 'Agency Fraud' firsthand, TezCare is a Clinical Correction. We ensure your facility remains audit-ready, every single shift.
   </p>
+  <div class="relative w-full h-[360px] md:h-[440px] rounded-[2rem] overflow-hidden shadow-2xl">
+    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=1400&q=80" alt="Bright modern UK care home setting" class="w-full h-full object-cover">
+  </div>
 </section>
 
 <!-- THE COMMITMENT BLOCK -->
-<section class="py-24 relative overflow-hidden bg-navy-brand border-t border-white/5">
+<section class="py-24 relative overflow-hidden bg-white border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <!-- Left: Text Core -->
             <div class="space-y-8 scroll-animate">
                 <span class="text-brand-red font-bold text-sm tracking-widest uppercase block border-l-2 border-brand-red pl-3">The Clinical Guarantee</span>
-                <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight">Beyond Compassion:<br>We Deploy Certainty.</h2>
-                <p class="text-xl text-slate-400 leading-relaxed font-body">
+                <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-navy-brand leading-tight">Beyond Compassion:<br>We Deploy Certainty.</h2>
+                <p class="text-xl text-slate-500 leading-relaxed font-body">
                     The industry settles for 'adequate' care. We enforce clinical excellence through a three-stage vetting logic that national agencies ignore.
                 </p>
                 <div class="space-y-6 mt-8">
@@ -110,8 +118,8 @@
                             <i data-lucide="check" class="w-4 h-4 text-brand-red"></i>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold text-white">Vetting over Volume</h4>
-                            <p class="text-slate-400 text-base leading-relaxed">Every profile is audited by our Clinical Heads before deployment.</p>
+                            <h4 class="text-lg font-bold text-navy-brand">Vetting over Volume</h4>
+                            <p class="text-slate-500 text-base leading-relaxed">Every profile is audited by our Clinical Heads before deployment.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
@@ -119,8 +127,8 @@
                             <i data-lucide="check" class="w-4 h-4 text-brand-red"></i>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold text-white">Proximity over Profit</h4>
-                            <p class="text-slate-400 text-base leading-relaxed">We only match staff within a 15-mile radius of your Taunton facility.</p>
+                            <h4 class="text-lg font-bold text-navy-brand">Proximity over Profit</h4>
+                            <p class="text-slate-500 text-base leading-relaxed">We only match staff within a 15-mile radius of your Taunton facility.</p>
                         </div>
                     </div>
                 </div>
@@ -131,17 +139,17 @@
                 <img src="images/team.png" alt="The TezCare Team" class="w-full h-full object-cover rounded-[1.5rem]">
                 <div class="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-transparent to-transparent opacity-70 rounded-[2rem]"></div>
 
-                <div class="absolute top-10 left-8 glass-morphism rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl">
+                <div class="absolute top-10 left-8 glass-dark rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl">
                     <i data-lucide="badge-check" class="w-5 h-5 text-brand-red flex-shrink-0"></i>
                     <span class="text-white text-sm font-bold">Enhanced DBS</span>
                 </div>
 
-                <div class="absolute bottom-14 right-10 glass-morphism rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl">
+                <div class="absolute bottom-14 right-10 glass-dark rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl">
                     <i data-lucide="graduation-cap" class="w-5 h-5 text-brand-red flex-shrink-0"></i>
                     <span class="text-white text-sm font-bold">Training Verified</span>
                 </div>
 
-                <div class="absolute bottom-24 left-14 glass-morphism rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl">
+                <div class="absolute bottom-24 left-14 glass-dark rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl">
                     <i data-lucide="map-pin" class="w-5 h-5 text-brand-red flex-shrink-0"></i>
                     <span class="text-white text-sm font-bold">15-Mile Radius</span>
                 </div>
@@ -151,10 +159,10 @@
 </section>
 
 <!-- THE PILLARS GRID -->
-<section class="py-24 relative bg-[#0f172a] border-t border-brand-red/10">
+<section class="py-24 relative bg-slate-50 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-8 relative z-10">
         <div class="text-center mb-16 scroll-animate">
-            <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-white">The TezCare Pillars</h2>
+            <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-navy-brand">The TezCare Pillars</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 scroll-animate">
@@ -165,8 +173,8 @@
                         <i data-lucide="shield-alert" class="w-7 h-7 text-white"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-white mb-3">Anti-Fraud Protocols</h3>
-                        <p class="text-slate-400 text-lg leading-relaxed">We verify the source of every training certificate. No shortcuts.</p>
+                        <h3 class="text-xl font-bold text-navy-brand mb-3">Anti-Fraud Protocols</h3>
+                        <p class="text-slate-500 text-lg leading-relaxed">We verify the source of every training certificate. No shortcuts.</p>
                     </div>
                 </div>
             </div>
@@ -178,8 +186,8 @@
                         <i data-lucide="user-check" class="w-7 h-7 text-white"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-white mb-3">Clinical Veto Power</h3>
-                        <p class="text-slate-400 text-lg leading-relaxed">Our Clinical Heads (Sona/Jaya) have the final say on all staff—not the sales team.</p>
+                        <h3 class="text-xl font-bold text-navy-brand mb-3">Clinical Veto Power</h3>
+                        <p class="text-slate-500 text-lg leading-relaxed">Our Clinical Heads (Sona/Jaya) have the final say on all staff—not the sales team.</p>
                     </div>
                 </div>
             </div>
@@ -191,8 +199,8 @@
                         <i data-lucide="clock" class="w-7 h-7 text-white"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-white mb-3">The 30-Minute Check</h3>
-                        <p class="text-slate-400 text-lg leading-relaxed">We track staff movement to your facility. If a delay is detected, we pivot before your shift starts.</p>
+                        <h3 class="text-xl font-bold text-navy-brand mb-3">The 30-Minute Check</h3>
+                        <p class="text-slate-500 text-lg leading-relaxed">We track staff movement to your facility. If a delay is detected, we pivot before your shift starts.</p>
                     </div>
                 </div>
             </div>
@@ -204,8 +212,8 @@
                         <i data-lucide="file-text" class="w-7 h-7 text-white"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold text-white mb-3">Audit-Ready Vaults</h3>
-                        <p class="text-slate-400 text-lg leading-relaxed">Digital compliance packs delivered automatically. Your CQC file is always complete.</p>
+                        <h3 class="text-xl font-bold text-navy-brand mb-3">Audit-Ready Vaults</h3>
+                        <p class="text-slate-500 text-lg leading-relaxed">Digital compliance packs delivered automatically. Your CQC file is always complete.</p>
                     </div>
                 </div>
             </div>

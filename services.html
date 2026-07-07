@@ -40,14 +40,14 @@
     <style type="text/tailwindcss">
         @layer utilities {
             .bg-navy-gradient { background: linear-gradient(180deg, #0A1628 0%, #060d18 100%); }
-            .glass-morphism { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+            .glass-morphism { background: rgba(255, 255, 255, 0.65); backdrop-filter: blur(12px); border: 1px solid rgba(10, 22, 40, 0.08); }
             .text-glow { text-shadow: 0 0 20px rgba(235, 25, 34, 0.4); }
         }
     </style>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
+<body class="bg-white font-body text-slate-700 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
 
 <nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
     <div class="w-full max-w-6xl bg-white rounded-3xl md:rounded-full px-6 py-3 flex flex-col md:flex-row md:justify-between md:items-center shadow-2xl relative">
@@ -77,12 +77,11 @@
 <main id="services-main">
 
     <!-- 1. HERO -->
-    <section id="services-hero" class="relative min-h-[85vh] flex flex-col justify-center bg-[#0f172a] overflow-hidden pb-16 pt-32">
+    <section id="services-hero" class="relative min-h-[85vh] flex flex-col justify-center overflow-hidden pb-16 pt-32">
         <div class="absolute inset-0 z-0 select-none pointer-events-none">
-            <div class="absolute inset-0 topography-pattern opacity-40"></div>
-            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red/15 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4"></div>
-            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4"></div>
-            <div class="hero-overlay-gradient absolute inset-0"></div>
+            <img src="https://images.unsplash.com/photo-1576765608866-5b51046452be?auto=format&fit=crop&w=1600&q=80" alt="TezCare Compassionate Care" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy-brand via-navy-brand/80 to-navy-brand/30"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-brand/80 via-transparent to-transparent"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-8 relative z-10 w-full flex-grow flex flex-col justify-center">
@@ -94,7 +93,7 @@
                 <h1 class="scroll-rotate-title text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold text-white leading-tight mb-8 tracking-tighter drop-shadow-xl">
                     Comprehensive Facility Staffing.<br><span class="italic">Director-Led Compliance.</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed font-body drop-shadow-lg font-medium">
+                <p class="text-xl md:text-2xl text-slate-200 mb-8 leading-relaxed font-body drop-shadow-lg font-medium">
                     TezCare doesn't just 'fill gaps.' We deploy Support Workers (HCAs) and Complex Care Specialists who are uniform-ready and 100% audit-compliant, guaranteed locally in the South West. We prioritize your CQC rating, every single shift.
                 </p>
             </div>
@@ -126,42 +125,39 @@
     </section>
 
     <!-- 2. CLINICAL PIVOT VIBE GRID -->
-    <section class="py-24 bg-[#0f172a] relative border-t border-white/5" data-aos="fade-up">
+    <section class="py-24 bg-white relative border-t border-slate-200" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-8 relative z-10">
              <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
                 <!-- Box 1 (Residential HCA) -->
-                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-brand-red/20 hover:border-brand-red/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-brand-red/5 shadow-[0_0_20px_rgba(235, 25, 34,0.05)]">
-                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-brand-red/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
-                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand-red/20 rounded-full blur-[80px]"></div>
-                        <i data-lucide="clipboard-check" class="w-20 h-20 text-brand-red relative z-10"></i>
+                <div class="group p-8 md:p-10 rounded-[2rem] bg-white border border-slate-200 hover:border-brand-red/40 shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col h-full relative overflow-hidden">
+                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1576765608866-5b51046452be?auto=format&fit=crop&w=600&q=80" alt="Support Worker checking care plan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     </div>
-                    <h3 class="text-2xl font-headline font-bold mb-4 text-white">Residential HCA</h3>
-                    <p class="text-slate-400 text-lg leading-relaxed flex-grow">
+                    <h3 class="text-2xl font-headline font-bold mb-4 text-navy-brand">Residential HCA</h3>
+                    <p class="text-slate-500 text-lg leading-relaxed flex-grow">
                         We Ensure Audit-Ready Residential Support. Every HCA is vetted against the UK Core Skills framework. We don't just 'cover' shifts; we protect your facility's CQC compliance status.
                     </p>
                 </div>
 
                 <!-- Box 2 (Complex Care) -->
-                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-brand-red/20 hover:border-brand-red/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-brand-red/5 shadow-[0_0_20px_rgba(235, 25, 34,0.05)]">
-                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-brand-red/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
-                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-red/20 rounded-full blur-[80px]"></div>
-                        <i data-lucide="heart-pulse" class="w-20 h-20 text-brand-red relative z-10"></i>
+                <div class="group p-8 md:p-10 rounded-[2rem] bg-white border border-slate-200 hover:border-brand-red/40 shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col h-full relative overflow-hidden">
+                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=80" alt="HCA assisting mobility" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     </div>
-                    <h3 class="text-2xl font-headline font-bold mb-4 text-white">Complex Care</h3>
-                    <p class="text-slate-400 text-lg leading-relaxed flex-grow">
+                    <h3 class="text-2xl font-headline font-bold mb-4 text-navy-brand">Complex Care</h3>
+                    <p class="text-slate-500 text-lg leading-relaxed flex-grow">
                         Specialized Dementia & Frailty Support. Our staff are selected for their specific experience in high-dependency environments, overseen by our Head of Staffing Quality.
                     </p>
                 </div>
 
                 <!-- Box 3 (Emergency Cover) -->
-                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-brand-red/20 hover:border-brand-red/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-brand-red/5 shadow-[0_0_20px_rgba(235, 25, 34,0.05)]">
-                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-brand-red/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
-                        <div class="absolute -top-10 -left-10 w-40 h-40 bg-brand-red/20 rounded-full blur-[80px]"></div>
-                        <i data-lucide="zap" class="w-20 h-20 text-brand-red relative z-10"></i>
+                <div class="group p-8 md:p-10 rounded-[2rem] bg-white border border-slate-200 hover:border-brand-red/40 shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col h-full relative overflow-hidden">
+                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=600&q=80" alt="Specialist medication adherence" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     </div>
-                    <h3 class="text-2xl font-headline font-bold mb-4 text-white">Emergency Cover</h3>
-                    <p class="text-slate-400 text-lg leading-relaxed flex-grow">
+                    <h3 class="text-2xl font-headline font-bold mb-4 text-navy-brand">Emergency Cover</h3>
+                    <p class="text-slate-500 text-lg leading-relaxed flex-grow">
                         Rapid Response Deployment. We utilize local Taunton logistics to ensure last-minute gaps are filled by staff who arrive on time and ready to work.
                     </p>
                 </div>
@@ -171,34 +167,34 @@
     </section>
 
     <!-- 3. PERFORMANCE METRICS GATE -->
-    <section class="py-24 relative overflow-hidden bg-navy-deep border-t border-brand-red/10">
+    <section class="py-24 relative overflow-hidden bg-slate-50 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-8 relative z-10">
             <div class="glass-morphism p-12 md:p-20 rounded-[3rem] border border-brand-red/20 shadow-[0_0_50px_rgba(235, 25, 34,0.1)] relative overflow-hidden">
-                <div class="absolute inset-0 bg-[#0f172a] opacity-80 z-0 rounded-[3rem]"></div>
+                <div class="absolute inset-0 bg-white z-0 rounded-[3rem]"></div>
                 <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-red/10 rounded-full blur-[100px] z-0"></div>
                 <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-brand-red/10 rounded-full blur-[100px] z-0"></div>
 
                 <div class="text-center mb-20 relative z-10">
                     <span class="text-brand-red font-bold text-sm tracking-widest uppercase mb-4 block">Execution Quality</span>
-                    <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-white">The TezCare Standard: By the Numbers.</h2>
+                    <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-navy-brand">The TezCare Standard: By the Numbers.</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
                     <div class="text-center group">
                         <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-brand-red mb-4 drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">100%</div>
-                        <h3 class="text-xl font-bold text-white mb-3 leading-tight">Audit-Ready<br>Compliance Packs</h3>
+                        <h3 class="text-xl font-bold text-navy-brand mb-3 leading-tight">Audit-Ready<br>Compliance Packs</h3>
                     </div>
                     <div class="text-center group">
                         <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-brand-red mb-4 drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">30-Min</div>
-                        <h3 class="text-xl font-bold text-white mb-3 leading-tight">Pre-Shift<br>Alert</h3>
+                        <h3 class="text-xl font-bold text-navy-brand mb-3 leading-tight">Pre-Shift<br>Alert</h3>
                     </div>
                     <div class="text-center group">
                         <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-brand-red mb-4 drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">24/7</div>
-                        <h3 class="text-xl font-bold text-white mb-3 leading-tight">Director-Led<br>Vetting Protocols</h3>
+                        <h3 class="text-xl font-bold text-navy-brand mb-3 leading-tight">Director-Led<br>Vetting Protocols</h3>
                     </div>
                     <div class="text-center group">
                         <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-brand-red mb-4 drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">Zero</div>
-                        <h3 class="text-xl font-bold text-white mb-3 leading-tight">Fraud Guarantee<br><span class="text-brand-red/70 font-medium text-sm">(Verified DBS)</span></h3>
+                        <h3 class="text-xl font-bold text-navy-brand mb-3 leading-tight">Fraud Guarantee<br><span class="text-brand-red/70 font-medium text-sm">(Verified DBS)</span></h3>
                     </div>
                 </div>
 
@@ -210,25 +206,20 @@
     </section>
 
     <!-- CARE HOME SPECIALIZATION -->
-    <section class="py-32 relative bg-[#0f172a]">
+    <section class="py-32 relative bg-white">
         <div class="max-w-7xl mx-auto px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div class="space-y-8 order-2 lg:order-1">
-                    <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white">Specialized for Care Homes</h2>
-                    <div class="space-y-6 text-lg text-slate-400 leading-relaxed font-body">
+                    <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-navy-brand">Specialized for Care Homes</h2>
+                    <div class="space-y-6 text-lg text-slate-500 leading-relaxed font-body">
                         <p>We exclusively serve the B2B sector with a stark focus on providing compliant, highly trained staff for care homes and hospital environments.</p>
                         <p>Our approach ensures continuity of care, matching the specific clinical requirements of your residents with the proven expertise of our deployed professionals.</p>
                     </div>
                 </div>
 
                 <div class="relative group order-1 lg:order-2">
-                    <div class="rounded-[2.5rem] relative z-10 w-full aspect-[4/3] shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-white/5 bg-gradient-to-br from-navy-brand to-navy-deep overflow-hidden flex items-center justify-center">
-                        <div class="absolute inset-0 topography-pattern opacity-30"></div>
-                        <div class="absolute -top-16 -right-16 w-64 h-64 bg-brand-red/20 rounded-full blur-[100px]"></div>
-                        <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-brand-red/10 rounded-full blur-[100px]"></div>
-                        <div class="relative z-10 w-32 h-32 rounded-full bg-brand-red/10 border-2 border-brand-red flex items-center justify-center shadow-[0_0_40px_rgba(235, 25, 34,0.4)]">
-                            <i data-lucide="heart-handshake" class="w-16 h-16 text-brand-red"></i>
-                        </div>
+                    <div class="rounded-[2.5rem] relative z-10 w-full aspect-[4/3] shadow-2xl border border-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580281657702-257584239a55?auto=format&fit=crop&w=1000&q=80" alt="Care workers with elderly woman in premium care home lounge" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>

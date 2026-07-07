@@ -43,7 +43,7 @@
     <style type="text/tailwindcss">
         @layer utilities {
             .bg-navy-gradient { background: linear-gradient(180deg, #0A1628 0%, #060d18 100%); }
-            .glass-morphism { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+            .glass-morphism { background: rgba(255, 255, 255, 0.65); backdrop-filter: blur(12px); border: 1px solid rgba(10, 22, 40, 0.08); }
             .cinematic-overlay { background: linear-gradient(to bottom, rgba(10, 22, 40, 0.85), rgba(10, 22, 40, 0.95)); }
             .cinematic-overlay-teal { background: linear-gradient(to bottom, rgba(235, 25, 34, 0.15), rgba(10, 22, 40, 0.98)); }
             .text-glow { text-shadow: 0 0 20px rgba(235, 25, 34, 0.4); }
@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
+<body class="bg-white font-body text-slate-700 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
 
 <nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
     <div class="w-full max-w-6xl bg-white rounded-3xl md:rounded-full px-6 py-3 flex flex-col md:flex-row md:justify-between md:items-center shadow-2xl relative">
@@ -83,12 +83,11 @@
 <main id="services-main">
 
     <!-- 1. HERO -->
-    <section id="services-hero" class="relative min-h-[85vh] flex flex-col justify-center bg-[#0f172a] overflow-hidden pb-16 pt-32">
+    <section id="services-hero" class="relative min-h-[85vh] flex flex-col justify-center overflow-hidden pb-16 pt-32">
         <div class="absolute inset-0 z-0 select-none pointer-events-none">
-            <div class="absolute inset-0 topography-pattern opacity-40"></div>
-            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red/15 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4"></div>
-            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4"></div>
-            <div class="hero-overlay-gradient absolute inset-0"></div>
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1600&q=80" alt="TezCare Clinical Audit" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy-brand via-navy-brand/80 to-navy-brand/30"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-brand/80 via-transparent to-transparent"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-8 relative z-10 w-full flex-grow flex flex-col justify-center">
@@ -100,7 +99,7 @@
                 <h1 class="scroll-rotate-title text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold text-white leading-tight mb-8 tracking-tighter drop-shadow-xl">
                     Somerset's Accountable Staffing Partner.<br><span class="italic">Local. Responsive. Reliable.</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed font-body drop-shadow-lg font-medium">
+                <p class="text-xl md:text-2xl text-slate-200 mb-8 leading-relaxed font-body drop-shadow-lg font-medium">
                     National agencies can feel distant when you need staff urgently. TezCare is based in Taunton and works within a defined local radius, with a dedicated team who take ownership of every placement — so you always know who you're speaking to.
                 </p>
             </div>
@@ -132,17 +131,17 @@
     </section>
 
     <!-- CLEAN GRID -->
-    <section class="pb-24 pt-0 bg-[#0f172a] relative border-t border-white/5" data-aos="fade-up">
+    <section class="pb-24 pt-0 bg-white relative border-t border-slate-200" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-8 relative z-10 w-full">
 
             <div class="text-center max-w-2xl mx-auto mb-20">
                 <span class="inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-brand-red text-brand-red text-[0.75rem] font-bold tracking-[0.2em] uppercase mb-6">
                     THE TEZCARE STANDARD
                 </span>
-                <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white mb-6 tracking-tight">
+                <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-navy-brand mb-6 tracking-tight">
                     Why Facilities Choose TezCare
                 </h2>
-                <p class="text-lg md:text-xl text-slate-400 leading-relaxed font-body">
+                <p class="text-lg md:text-xl text-slate-500 leading-relaxed font-body">
                     We replace agency friction with responsible recruitment, local knowledge and clear communication.
                 </p>
             </div>
@@ -154,8 +153,8 @@
                     <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
                         <i data-lucide="shield-check" class="w-7 h-7 text-brand-red"></i>
                     </div>
-                    <h3 class="text-xl font-headline font-bold mb-3 text-white">Responsible Recruitment</h3>
-                    <p class="text-slate-400 text-base leading-relaxed font-body">
+                    <h3 class="text-xl font-headline font-bold mb-3 text-navy-brand">Responsible Recruitment</h3>
+                    <p class="text-slate-500 text-base leading-relaxed font-body">
                         Workers are screened according to their role, including identity, right-to-work, references and DBS status where required.
                     </p>
                 </div>
@@ -165,8 +164,8 @@
                     <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
                         <i data-lucide="map-pin" class="w-7 h-7 text-brand-red"></i>
                     </div>
-                    <h3 class="text-xl font-headline font-bold mb-3 text-white">Locally Based</h3>
-                    <p class="text-slate-400 text-base leading-relaxed font-body">
+                    <h3 class="text-xl font-headline font-bold mb-3 text-navy-brand">Locally Based</h3>
+                    <p class="text-slate-500 text-base leading-relaxed font-body">
                         Based in Taunton and focused on care providers across Somerset and the surrounding area.
                     </p>
                 </div>
@@ -176,8 +175,8 @@
                     <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
                         <i data-lucide="phone-call" class="w-7 h-7 text-brand-red"></i>
                     </div>
-                    <h3 class="text-xl font-headline font-bold mb-3 text-white">Dedicated Point of Contact</h3>
-                    <p class="text-slate-400 text-base leading-relaxed font-body">
+                    <h3 class="text-xl font-headline font-bold mb-3 text-navy-brand">Dedicated Point of Contact</h3>
+                    <p class="text-slate-500 text-base leading-relaxed font-body">
                         A named contact for booking requests, confirmations and placement queries — not a call centre.
                     </p>
                 </div>
@@ -187,8 +186,8 @@
                     <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
                         <i data-lucide="file-check-2" class="w-7 h-7 text-brand-red"></i>
                     </div>
-                    <h3 class="text-xl font-headline font-bold mb-3 text-white">Clear Compliance Information</h3>
-                    <p class="text-slate-400 text-base leading-relaxed font-body">
+                    <h3 class="text-xl font-headline font-bold mb-3 text-navy-brand">Clear Compliance Information</h3>
+                    <p class="text-slate-500 text-base leading-relaxed font-body">
                         Relevant worker documentation can be shared securely with authorised clients, subject to data protection requirements.
                     </p>
                 </div>
@@ -198,8 +197,8 @@
                     <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
                         <i data-lucide="receipt" class="w-7 h-7 text-brand-red"></i>
                     </div>
-                    <h3 class="text-xl font-headline font-bold mb-3 text-white">Transparent Rates</h3>
-                    <p class="text-slate-400 text-base leading-relaxed font-body">
+                    <h3 class="text-xl font-headline font-bold mb-3 text-navy-brand">Transparent Rates</h3>
+                    <p class="text-slate-500 text-base leading-relaxed font-body">
                         A written rate card or quotation is provided before any placement is confirmed, with any surcharges communicated in advance.
                     </p>
                 </div>
@@ -209,8 +208,8 @@
                     <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
                         <i data-lucide="calendar-clock" class="w-7 h-7 text-brand-red"></i>
                     </div>
-                    <h3 class="text-xl font-headline font-bold mb-3 text-white">Flexible Cover</h3>
-                    <p class="text-slate-400 text-base leading-relaxed font-body">
+                    <h3 class="text-xl font-headline font-bold mb-3 text-navy-brand">Flexible Cover</h3>
+                    <p class="text-slate-500 text-base leading-relaxed font-body">
                         Support for planned shifts, short-notice requirements and ongoing temporary placements.
                     </p>
                 </div>
@@ -218,7 +217,7 @@
             </div>
 
             <div class="w-full text-center mt-20">
-                <a class='inline-flex px-12 py-4 rounded-full border-2 border-brand-red text-white font-bold text-sm tracking-widest uppercase hover:bg-brand-red/10 transition-all' href='services.html'>VIEW ALL SERVICES</a>
+                <a class='inline-flex px-12 py-4 rounded-full border-2 border-brand-red text-brand-red font-bold text-sm tracking-widest uppercase hover:bg-brand-red hover:text-white transition-all' href='services.html'>VIEW ALL SERVICES</a>
             </div>
 
             <!-- Partner Section -->
@@ -231,30 +230,30 @@
                 </div>
 
                 <div class="space-y-8">
-                    <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white">Partner With a Team You Can Rely On</h2>
-                    <p class="text-lg text-slate-400 leading-relaxed">We aim to work as a transparent extension of your service's staffing function, not just another agency on your supplier list.</p>
+                    <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-navy-brand">Partner With a Team You Can Rely On</h2>
+                    <p class="text-lg text-slate-500 leading-relaxed">We aim to work as a transparent extension of your service's staffing function, not just another agency on your supplier list.</p>
                     <ul class="space-y-5">
                         <li class="flex items-start gap-4">
                             <div class="mt-1 w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
                                 <div class="w-2.5 h-2.5 rounded-full bg-brand-red"></div>
                             </div>
-                            <span class="text-lg text-slate-300">Clear communication throughout the booking process</span>
+                            <span class="text-lg text-slate-600">Clear communication throughout the booking process</span>
                         </li>
                         <li class="flex items-start gap-4">
                             <div class="mt-1 w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
                                 <div class="w-2.5 h-2.5 rounded-full bg-brand-red"></div>
                             </div>
-                            <span class="text-lg text-slate-300">Workers screened according to role and placement requirements</span>
+                            <span class="text-lg text-slate-600">Workers screened according to role and placement requirements</span>
                         </li>
                         <li class="flex items-start gap-4">
                             <div class="mt-1 w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
                                 <div class="w-2.5 h-2.5 rounded-full bg-brand-red"></div>
                             </div>
-                            <span class="text-lg text-slate-300">Support for continuity of care through consistent, reliable staffing</span>
+                            <span class="text-lg text-slate-600">Support for continuity of care through consistent, reliable staffing</span>
                         </li>
                     </ul>
                     <div class="pt-4">
-                        <a class='inline-flex px-10 py-5 rounded-full bg-white text-navy-brand font-bold text-lg hover:bg-slate-200 transition-all shadow-xl' href='contact.html'>Partner With Us</a>
+                        <a class='inline-flex px-10 py-5 rounded-full bg-brand-red text-white font-bold text-lg hover:bg-red-600 transition-all shadow-xl' href='contact.html'>Partner With Us</a>
                     </div>
                 </div>
             </div>
@@ -262,47 +261,47 @@
     </section>
 
     <!-- RISK MITIGATION Q&A -->
-    <section class="py-32 relative bg-navy-deep border-t border-brand-red/10" data-aos="fade-up">
+    <section class="py-32 relative bg-slate-50 border-t border-slate-200" data-aos="fade-up">
         <div class="max-w-4xl mx-auto px-8 relative z-10">
             <div class="text-center mb-16">
                 <span class="text-brand-red font-bold text-sm tracking-widest uppercase mb-4 block">Frequently Asked Questions</span>
-                <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-white">Clear Answers, No Surprises.</h2>
+                <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-navy-brand">Clear Answers, No Surprises.</h2>
             </div>
 
             <div class="space-y-6">
-                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
-                    <h3 class="text-2xl font-bold text-white mb-4 flex items-start gap-4">
+                <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200 hover:border-brand-red/40 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    <h3 class="text-2xl font-bold text-navy-brand mb-4 flex items-start gap-4">
                         <i data-lucide="clock" class="text-brand-red w-6 h-6 mt-1 flex-shrink-0"></i>
                         How quickly can TezCare provide a worker?
                     </h3>
-                    <p class="text-lg text-slate-300 leading-relaxed pl-10 border-l border-white/10 ml-3">
+                    <p class="text-lg text-slate-600 leading-relaxed pl-10 border-l border-slate-200 ml-3">
                         Availability depends on the role, location, shift time, notice provided and whether a suitably screened worker is available. We review urgent requests promptly, but only confirm a placement once an appropriate worker has been identified.
                     </p>
                 </div>
-                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
-                    <h3 class="text-2xl font-bold text-white mb-4 flex items-start gap-4">
+                <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200 hover:border-brand-red/40 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    <h3 class="text-2xl font-bold text-navy-brand mb-4 flex items-start gap-4">
                         <i data-lucide="shield-check" class="text-brand-red w-6 h-6 mt-1 flex-shrink-0"></i>
                         How do you check your workers?
                     </h3>
-                    <p class="text-lg text-slate-300 leading-relaxed pl-10 border-l border-white/10 ml-3">
+                    <p class="text-lg text-slate-600 leading-relaxed pl-10 border-l border-slate-200 ml-3">
                         Checks may include identity and right-to-work verification, employment history and references, DBS status, relevant training and, where applicable, professional registration. The checks completed depend on the role and your requirements.
                     </p>
                 </div>
-                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
-                    <h3 class="text-2xl font-bold text-white mb-4 flex items-start gap-4">
+                <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200 hover:border-brand-red/40 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    <h3 class="text-2xl font-bold text-navy-brand mb-4 flex items-start gap-4">
                         <i data-lucide="refresh-cw" class="text-brand-red w-6 h-6 mt-1 flex-shrink-0"></i>
                         What happens if a confirmed worker becomes unavailable?
                     </h3>
-                    <p class="text-lg text-slate-300 leading-relaxed pl-10 border-l border-white/10 ml-3">
+                    <p class="text-lg text-slate-600 leading-relaxed pl-10 border-l border-slate-200 ml-3">
                         We let you know as soon as possible and make reasonable efforts to find a suitable replacement. While we can't guarantee a replacement will always be available, keeping you informed early is our priority.
                     </p>
                 </div>
-                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
-                    <h3 class="text-2xl font-bold text-white mb-4 flex items-start gap-4">
+                <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200 hover:border-brand-red/40 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    <h3 class="text-2xl font-bold text-navy-brand mb-4 flex items-start gap-4">
                         <i data-lucide="receipt" class="text-brand-red w-6 h-6 mt-1 flex-shrink-0"></i>
                         How do I get your rates?
                     </h3>
-                    <p class="text-lg text-slate-300 leading-relaxed pl-10 border-l border-white/10 ml-3">
+                    <p class="text-lg text-slate-600 leading-relaxed pl-10 border-l border-slate-200 ml-3">
                         Contact our team for the current TezCare client rate card. Rates may vary by role, shift, notice period, bank holiday and placement requirements.
                     </p>
                 </div>
