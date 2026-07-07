@@ -164,16 +164,16 @@ function initSmartMatchModal() {
     if (btnToggleEmergency && btnToggleNormal && matchType) {
         btnToggleEmergency.addEventListener('click', () => {
             matchType.value = 'Emergency';
-            btnToggleEmergency.classList.add('bg-teal-brand', 'text-white');
+            btnToggleEmergency.classList.add('bg-brand-red', 'text-white');
             btnToggleEmergency.classList.remove('text-slate-400');
-            btnToggleNormal.classList.remove('bg-teal-brand', 'text-white');
+            btnToggleNormal.classList.remove('bg-brand-red', 'text-white');
             btnToggleNormal.classList.add('text-slate-400');
         });
         btnToggleNormal.addEventListener('click', () => {
             matchType.value = 'Normal';
-            btnToggleNormal.classList.add('bg-teal-brand', 'text-white');
+            btnToggleNormal.classList.add('bg-brand-red', 'text-white');
             btnToggleNormal.classList.remove('text-slate-400');
-            btnToggleEmergency.classList.remove('bg-teal-brand', 'text-white');
+            btnToggleEmergency.classList.remove('bg-brand-red', 'text-white');
             btnToggleEmergency.classList.add('text-slate-400');
         });
     }
@@ -222,14 +222,14 @@ function initSmartMatchModal() {
         if (!staffResultsContainer) return;
         staffResultsContainer.innerHTML = staffPool.map((s) => `
             <div class="staff-result-card">
-                <div class="w-12 h-12 rounded-full bg-teal-brand/20 border border-teal-brand/40 flex items-center justify-center text-teal-brand font-bold flex-shrink-0">
+                <div class="w-12 h-12 rounded-full bg-brand-red/20 border border-brand-red/40 flex items-center justify-center text-brand-red font-bold flex-shrink-0">
                     ${s.name.split(' ').map((n) => n[0]).join('')}
                 </div>
                 <div class="flex-1">
                     <p class="text-white font-bold text-sm">${s.name}</p>
                     <p class="text-slate-400 text-xs">${s.role} &middot; ${s.exp}</p>
                 </div>
-                <span class="text-[10px] font-bold uppercase tracking-wide text-teal-brand bg-teal-brand/10 border border-teal-brand/30 px-2.5 py-1 rounded-full whitespace-nowrap">${s.badge}</span>
+                <span class="text-[10px] font-bold uppercase tracking-wide text-brand-red bg-brand-red/10 border border-brand-red/30 px-2.5 py-1 rounded-full whitespace-nowrap">${s.badge}</span>
             </div>
         `).join('');
     }

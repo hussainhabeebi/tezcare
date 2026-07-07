@@ -15,11 +15,11 @@
         theme: {
           extend: {
             colors: {
-              "teal-brand": "#0D9488",
+              "brand-red": "#EB1922",
               "navy-brand": "#0A1628",
               "navy-deep": "#060d18",
               "navy-light": "#1e2a3b",
-              "primary": "#0D9488",
+              "primary": "#EB1922",
               "on-primary": "#ffffff",
               "surface": "#0A1628",
               "on-surface": "#ffffff",
@@ -39,14 +39,14 @@
             .bg-navy-gradient { background: linear-gradient(180deg, #0A1628 0%, #060d18 100%); }
             .glass-morphism { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
             .cinematic-overlay { background: linear-gradient(to bottom, rgba(10, 22, 40, 0.85), rgba(10, 22, 40, 0.95)); }
-            .cinematic-overlay-teal { background: linear-gradient(to bottom, rgba(13, 148, 136, 0.15), rgba(10, 22, 40, 0.98)); }
-            .text-glow { text-shadow: 0 0 20px rgba(13, 148, 136, 0.4); }
-            .topography-pattern { background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 380c20-10 40-10 60 0s40 10 60 0 40-10 60 0 40 10 60 0 40-10 60 0 40 10 60 0v20H0v-20z' fill='%230D9488' fill-opacity='0.05'/%3E%3C/svg%3E"); }
+            .cinematic-overlay-teal { background: linear-gradient(to bottom, rgba(235, 25, 34, 0.15), rgba(10, 22, 40, 0.98)); }
+            .text-glow { text-shadow: 0 0 20px rgba(235, 25, 34, 0.4); }
+            .topography-pattern { background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 380c20-10 40-10 60 0s40 10 60 0 40-10 60 0 40 10 60 0 40-10 60 0 40 10 60 0v20H0v-20z' fill='%23EB1922' fill-opacity='0.05'/%3E%3C/svg%3E"); }
         }
     </style>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-teal-brand selection:text-white">
+<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
 
 <nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
     <div class="w-full max-w-6xl glass-morphism rounded-3xl md:rounded-full px-6 py-3 flex flex-col md:flex-row md:justify-between md:items-center shadow-2xl relative">
@@ -54,7 +54,7 @@
             <a class='flex flex-shrink-0 items-center' href='index.html'>
                 <img src="images/Tezcare Logo with Trademark.png" alt="TezCare" style="height: 44px;">
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-teal-brand transition-colors flex items-center">
+            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-brand-red transition-colors flex items-center">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
@@ -63,11 +63,11 @@
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='about.html'>About</a>
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='services.html'>Service</a>
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='why-tezcare.html'>Why TezCare</a>
-            <button onclick="window.location.href='contact.html';" class="md:hidden w-full bg-teal-brand hover:bg-teal-600 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg shadow-teal-brand/20">
+            <button onclick="window.location.href='contact.html';" class="md:hidden w-full bg-brand-red hover:bg-red-600 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg shadow-brand-red/20">
                 Book A Staff
             </button>
         </div>
-        <button onclick="window.location.href='contact.html';" class="hidden md:block bg-teal-brand hover:bg-teal-600 text-white px-6 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-teal-brand/20 whitespace-nowrap">
+        <button onclick="window.location.href='contact.html';" class="hidden md:block bg-brand-red hover:bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-brand-red/20 whitespace-nowrap">
             Book A Staff
         </button>
     </div>
@@ -77,12 +77,12 @@
 
     <section class="bg-navy-brand relative border-white/5 overflow-hidden">
         <div class="absolute inset-0 topography-pattern opacity-5"></div>
-        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-brand/10 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4 pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-teal-brand/5 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4 pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-red/5 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4 pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-8 relative z-10">
 
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-teal-brand/20 border border-teal-brand/30 text-teal-brand text-xs font-bold uppercase tracking-widest mb-6">
+                <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-brand-red/20 border border-brand-red/30 text-brand-red text-xs font-bold uppercase tracking-widest mb-6">
                     Partner With Us
                 </span>
                 <h1 class="scroll-rotate-title text-4xl md:text-6xl font-headline font-extrabold text-white leading-tight mb-6">Request Staffing Coverage</h1>
@@ -92,25 +92,25 @@
             </div>
 
             <div class="max-w-2xl mx-auto bg-navy-deep rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-brand to-[#116660]"></div>
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-[#116660]"></div>
 
                 <form id="contact-form" action="https://formspree.io/f/mpqorwzb" method="POST" class="space-y-6">
                     <div>
                         <label for="care-home-name" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Care Home / Facility Name *</label>
                         <input type="text" id="care-home-name" name="Care Home Name" required placeholder="Enter facility name"
-                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all placeholder:text-slate-500">
+                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all placeholder:text-slate-500">
                     </div>
 
                     <div>
                         <label for="location" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Location / Postcode *</label>
                         <input type="text" id="location" name="Location" required placeholder="e.g. SW1A 1AA"
-                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all placeholder:text-slate-500">
+                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all placeholder:text-slate-500">
                     </div>
 
                     <div>
                         <label for="role-required" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Role Required *</label>
                         <select id="role-required" name="Role Required" required
-                                class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all appearance-none cursor-pointer">
+                                class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all appearance-none cursor-pointer">
                             <option value="" disabled selected class="text-slate-500">Select the role needed</option>
                             <option value="Registered General Nurse (RGN)" class="text-navy-brand">Registered General Nurse (RGN)</option>
                             <option value="Registered Mental Nurse (RMN)" class="text-navy-brand">Registered Mental Nurse (RMN)</option>
@@ -123,23 +123,23 @@
                     <div>
                         <label for="shift-date" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Shift Date(s) & Time *</label>
                         <input type="text" id="shift-date" name="Shift Date" required placeholder="e.g. Tomorrow 08:00 - 20:00"
-                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all placeholder:text-slate-500">
+                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all placeholder:text-slate-500">
                     </div>
 
                     <div>
                         <label for="additional-notes" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Special Requirements / Notes</label>
                         <textarea id="additional-notes" name="Additional Notes" rows="4" placeholder="Any specific skills required, e.g. MAPA trained..."
-                                  class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-teal-brand focus:ring-1 focus:ring-teal-brand transition-all placeholder:text-slate-500 resize-y"></textarea>
+                                  class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all placeholder:text-slate-500 resize-y"></textarea>
                     </div>
 
                     <div class="pt-4">
-                        <button type="submit" class="w-full bg-teal-brand hover:bg-teal-600 text-white rounded-xl font-bold text-lg py-5 transition-all shadow-lg shadow-teal-brand/20 hover:-translate-y-1">
+                        <button type="submit" class="w-full bg-brand-red hover:bg-red-600 text-white rounded-xl font-bold text-lg py-5 transition-all shadow-lg shadow-brand-red/20 hover:-translate-y-1">
                             Submit Request
                         </button>
                     </div>
 
                     <p class="text-center text-sm text-slate-400 mt-6 pb-2">
-                        For immediate emergencies, please call <a href="tel:08001234567" class="text-teal-brand font-bold hover:underline">0800 123 4567</a>
+                        For immediate emergencies, please call <a href="tel:+447308441935" class="text-brand-red font-bold hover:underline">07308 441935</a>
                     </p>
                 </form>
             </div>
@@ -166,35 +166,35 @@
 
             <!-- Column 2: Company -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Company</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Company</h4>
                 <ul class="space-y-4 text-sm">
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='about.html'>About Us</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='why-tezcare.html'>Why TezCare</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='contact.html'>Join the Roster</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='why-tezcare.html'>Clinical Audit</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='about.html'>About Us</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='why-tezcare.html'>Why TezCare</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='contact.html'>Join the Roster</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='why-tezcare.html'>Clinical Audit</a></li>
                 </ul>
             </div>
 
             <!-- Column 3: Services -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Services</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Services</h4>
                 <ul class="space-y-4 text-sm">
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Residential HCA</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Complex Care</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Emergency Cover</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Specialist Staffing</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Residential HCA</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Complex Care</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Emergency Cover</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Specialist Staffing</a></li>
                 </ul>
             </div>
 
             <!-- Column 4: Contact -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Contact</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Contact</h4>
                 <ul class="space-y-4 text-sm">
                     <li class="text-[#94A3B8] leading-[1.8]">
                         Suite 2.04, The Keep, Creech Castle, Bathpool, Taunton, Somerset - TA1 2DX.
                     </li>
                     <li>
-                        <a href="tel:+447553619872" class="text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all">+44 7553619872</a>
+                        <a href="tel:+447553619872" class="text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all">+44 7553619872</a>
                     </li>
                 </ul>
             </div>
@@ -206,11 +206,11 @@
             <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500">
                 <span>© 2026 TezCare.</span>
                 <div class="flex items-center gap-4">
-                    <a href="#" class="hover:text-teal-brand transition-all">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Privacy Policy</a>
                     <span>|</span>
-                    <a href="#" class="hover:text-teal-brand transition-all">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Terms of Service</a>
                     <span>|</span>
-                    <a href="#" class="hover:text-teal-brand transition-all">Cookie Policy</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Cookie Policy</a>
                 </div>
             </div>
             <p class="text-slate-500 text-sm font-medium text-right">Somerset's Clinical Staffing Partner</p>
