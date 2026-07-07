@@ -21,11 +21,11 @@ body {
 
 /* Abstract topography texture used in place of stock photography */
 .topography-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 380c20-10 40-10 60 0s40 10 60 0 40-10 60 0 40 10 60 0 40-10 60 0 40 10 60 0v20H0v-20z' fill='%230D9488' fill-opacity='0.05'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 380c20-10 40-10 60 0s40 10 60 0 40-10 60 0 40 10 60 0 40-10 60 0 40 10 60 0v20H0v-20z' fill='%23EB1922' fill-opacity='0.05'/%3E%3C/svg%3E");
 }
 
 .dotted-line {
-    background-image: radial-gradient(circle, #0D9488 1.5px, transparent 1.5px);
+    background-image: radial-gradient(circle, #EB1922 1.5px, transparent 1.5px);
     background-size: 12px 100%;
     background-repeat: repeat-x;
     background-position: center;
@@ -39,7 +39,7 @@ body {
     width: 600px;
     height: 600px;
     border-radius: 9999px;
-    background: radial-gradient(circle, rgba(13, 148, 136, 0.16) 0%, rgba(13, 148, 136, 0) 70%);
+    background: radial-gradient(circle, rgba(235, 25, 34, 0.16) 0%, rgba(235, 25, 34, 0) 70%);
     pointer-events: none;
     z-index: 1;
     mix-blend-mode: screen;
@@ -141,6 +141,6 @@ dialog#smart-match-modal.modal-open {
 }
 
 .staff-result-card:hover {
-    border-color: rgba(13, 148, 136, 0.5);
-    background: rgba(13, 148, 136, 0.06);
+    border-color: rgba(235, 25, 34, 0.5);
+    background: rgba(235, 25, 34, 0.06);
 }

@@ -17,11 +17,11 @@
         theme: {
           extend: {
             colors: {
-              "teal-brand": "#0D9488",
+              "brand-red": "#EB1922",
               "navy-brand": "#0A1628",
               "navy-deep": "#060d18",
               "navy-light": "#1e2a3b",
-              "primary": "#0D9488",
+              "primary": "#EB1922",
               "on-primary": "#ffffff",
               "surface": "#0A1628",
               "on-surface": "#ffffff",
@@ -45,15 +45,15 @@
             .bg-navy-gradient { background: linear-gradient(180deg, #0A1628 0%, #060d18 100%); }
             .glass-morphism { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
             .cinematic-overlay { background: linear-gradient(to bottom, rgba(10, 22, 40, 0.85), rgba(10, 22, 40, 0.95)); }
-            .cinematic-overlay-teal { background: linear-gradient(to bottom, rgba(13, 148, 136, 0.15), rgba(10, 22, 40, 0.98)); }
-            .text-glow { text-shadow: 0 0 20px rgba(13, 148, 136, 0.4); }
-            .topography-pattern { background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 380c20-10 40-10 60 0s40 10 60 0 40-10 60 0 40 10 60 0 40-10 60 0 40 10 60 0v20H0v-20z' fill='%230D9488' fill-opacity='0.05'/%3E%3C/svg%3E"); }
+            .cinematic-overlay-teal { background: linear-gradient(to bottom, rgba(235, 25, 34, 0.15), rgba(10, 22, 40, 0.98)); }
+            .text-glow { text-shadow: 0 0 20px rgba(235, 25, 34, 0.4); }
+            .topography-pattern { background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 380c20-10 40-10 60 0s40 10 60 0 40-10 60 0 40 10 60 0 40-10 60 0 40 10 60 0v20H0v-20z' fill='%23EB1922' fill-opacity='0.05'/%3E%3C/svg%3E"); }
         }
     </style>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-teal-brand selection:text-white">
+<body class="bg-navy-brand font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
 
 <nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
     <div class="w-full max-w-6xl glass-morphism rounded-3xl md:rounded-full px-6 py-3 flex flex-col md:flex-row md:justify-between md:items-center shadow-2xl relative">
@@ -61,7 +61,7 @@
             <a class='flex flex-shrink-0 items-center' href='index.html'>
                 <img src="images/Tezcare Logo with Trademark.png" alt="TezCare" style="height: 44px;">
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-teal-brand transition-colors flex items-center">
+            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-brand-red transition-colors flex items-center">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
@@ -69,12 +69,12 @@
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='index.html'>Homepage</a>
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='about.html'>About</a>
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='services.html'>Service</a>
-            <a class='text-white font-semibold text-sm hover:text-teal-brand transition-colors' href='why-tezcare.html'>Why TezCare</a>
-            <button onclick="window.location.href='contact.html';" class="md:hidden w-full bg-teal-brand hover:bg-teal-600 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg shadow-teal-brand/20">
+            <a class='text-white font-semibold text-sm hover:text-brand-red transition-colors' href='why-tezcare.html'>Why TezCare</a>
+            <button onclick="window.location.href='contact.html';" class="md:hidden w-full bg-brand-red hover:bg-red-600 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg shadow-brand-red/20">
                 Book A Staff
             </button>
         </div>
-        <button onclick="window.location.href='contact.html';" class="hidden md:block bg-teal-brand hover:bg-teal-600 text-white px-6 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-teal-brand/20 whitespace-nowrap">
+        <button onclick="window.location.href='contact.html';" class="hidden md:block bg-brand-red hover:bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-brand-red/20 whitespace-nowrap">
             Book A Staff
         </button>
     </div>
@@ -86,19 +86,19 @@
     <section id="services-hero" class="relative min-h-[85vh] flex flex-col justify-center bg-[#0f172a] overflow-hidden pb-16 pt-32">
         <div class="absolute inset-0 z-0 select-none pointer-events-none">
             <div class="absolute inset-0 topography-pattern opacity-40"></div>
-            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-brand/15 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4"></div>
-            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-brand/10 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4"></div>
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red/15 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4"></div>
+            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4"></div>
             <div class="hero-overlay-gradient absolute inset-0"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-8 relative z-10 w-full flex-grow flex flex-col justify-center">
 
             <div class="max-w-3xl text-left mb-16">
-                <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-teal-brand/20 border border-teal-brand/30 text-teal-brand text-xs font-bold uppercase tracking-widest mb-8 backdrop-blur-md">
+                <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-brand-red/20 border border-brand-red/30 text-brand-red text-xs font-bold uppercase tracking-widest mb-8 backdrop-blur-md">
                     Why TezCare
                 </span>
                 <h1 class="scroll-rotate-title text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold text-white leading-tight mb-8 tracking-tighter drop-shadow-xl">
-                    Somerset's Accountable Staffing Partner.<br><span class="text-teal-400">Local. Responsive. Reliable.</span>
+                    Somerset's Accountable Staffing Partner.<br><span class="text-red-400">Local. Responsive. Reliable.</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed font-body drop-shadow-lg font-medium">
                     National agencies can feel distant when you need staff urgently. TezCare is based in Taunton and works within a defined local radius, with a dedicated team who take ownership of every placement — so you always know who you're speaking to.
@@ -106,8 +106,8 @@
             </div>
 
             <div class="text-center w-full mb-20 md:mb-24 mt-4 relative">
-                <div class="absolute inset-0 w-full h-full bg-teal-brand/10 blur-[100px] z-0 pointer-events-none"></div>
-                <a class='relative z-10 inline-flex px-10 py-5 rounded-full bg-teal-brand text-navy-deep font-black text-lg hover:bg-teal-400 transition-all shadow-[0_0_40px_rgba(13,148,136,0.6)] tracking-widest uppercase' href='contact.html'>CHECK AVAILABILITY</a>
+                <div class="absolute inset-0 w-full h-full bg-brand-red/10 blur-[100px] z-0 pointer-events-none"></div>
+                <a class='relative z-10 inline-flex px-10 py-5 rounded-full bg-brand-red text-navy-deep font-black text-lg hover:bg-red-400 transition-all shadow-[0_0_40px_rgba(235, 25, 34,0.6)] tracking-widest uppercase' href='contact.html'>CHECK AVAILABILITY</a>
             </div>
 
             <div class="w-full text-center relative mt-auto pb-4">
@@ -116,7 +116,7 @@
                 </div>
                 <div class="relative flex justify-center px-4 overflow-x-hidden md:overflow-visible">
                     <span class="bg-[#0f172a]/95 backdrop-blur-md px-6 py-3 text-white font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase max-w-5xl leading-loose rounded-full border border-white/10 shadow-2xl block md:inline-block">
-                        TAUNTON-BASED TEAM <span class="text-teal-brand mx-2 md:mx-4">||</span> ROLE-SPECIFIC VETTING <span class="text-teal-brand mx-2 md:mx-4">||</span> CLEAR COMPLIANCE INFORMATION <span class="text-teal-brand mx-2 md:mx-4">||</span> CQC-ALIGNED STANDARDS
+                        TAUNTON-BASED TEAM <span class="text-brand-red mx-2 md:mx-4">||</span> ROLE-SPECIFIC VETTING <span class="text-brand-red mx-2 md:mx-4">||</span> CLEAR COMPLIANCE INFORMATION <span class="text-brand-red mx-2 md:mx-4">||</span> CQC-ALIGNED STANDARDS
                     </span>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                 <p class="text-white/70 text-sm font-body tracking-wider uppercase mb-4">
                     Straightforward compliance. Responsive local support. See why Somerset care providers choose TezCare.
                 </p>
-                <i data-lucide="chevron-down" class="text-teal-brand w-6 h-6 animate-bounce opacity-80"></i>
+                <i data-lucide="chevron-down" class="text-brand-red w-6 h-6 animate-bounce opacity-80"></i>
             </div>
 
         </div>
@@ -136,7 +136,7 @@
         <div class="max-w-7xl mx-auto px-8 relative z-10 w-full">
 
             <div class="text-center max-w-2xl mx-auto mb-20">
-                <span class="inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-teal-brand text-teal-brand text-[0.75rem] font-bold tracking-[0.2em] uppercase mb-6">
+                <span class="inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-brand-red text-brand-red text-[0.75rem] font-bold tracking-[0.2em] uppercase mb-6">
                     THE TEZCARE STANDARD
                 </span>
                 <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white mb-6 tracking-tight">
@@ -150,9 +150,9 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- CARD 1 -->
-                <div class="glass-morphism p-8 rounded-[1.75rem] border border-teal-brand/10 hover:border-teal-brand/40 transition-all duration-300 group" data-aos="fade-up">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-teal-brand/10 border border-teal-brand/30 flex items-center justify-center group-hover:bg-teal-brand/20 transition-all duration-300">
-                        <i data-lucide="shield-check" class="w-7 h-7 text-teal-brand"></i>
+                <div class="glass-morphism p-8 rounded-[1.75rem] border border-brand-red/10 hover:border-brand-red/40 transition-all duration-300 group" data-aos="fade-up">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-brand-red"></i>
                     </div>
                     <h3 class="text-xl font-headline font-bold mb-3 text-white">Responsible Recruitment</h3>
                     <p class="text-slate-400 text-base leading-relaxed font-body">
@@ -161,9 +161,9 @@
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="glass-morphism p-8 rounded-[1.75rem] border border-teal-brand/10 hover:border-teal-brand/40 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="50">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-teal-brand/10 border border-teal-brand/30 flex items-center justify-center group-hover:bg-teal-brand/20 transition-all duration-300">
-                        <i data-lucide="map-pin" class="w-7 h-7 text-teal-brand"></i>
+                <div class="glass-morphism p-8 rounded-[1.75rem] border border-brand-red/10 hover:border-brand-red/40 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="50">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
+                        <i data-lucide="map-pin" class="w-7 h-7 text-brand-red"></i>
                     </div>
                     <h3 class="text-xl font-headline font-bold mb-3 text-white">Locally Based</h3>
                     <p class="text-slate-400 text-base leading-relaxed font-body">
@@ -172,9 +172,9 @@
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="glass-morphism p-8 rounded-[1.75rem] border border-teal-brand/10 hover:border-teal-brand/40 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-teal-brand/10 border border-teal-brand/30 flex items-center justify-center group-hover:bg-teal-brand/20 transition-all duration-300">
-                        <i data-lucide="phone-call" class="w-7 h-7 text-teal-brand"></i>
+                <div class="glass-morphism p-8 rounded-[1.75rem] border border-brand-red/10 hover:border-brand-red/40 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
+                        <i data-lucide="phone-call" class="w-7 h-7 text-brand-red"></i>
                     </div>
                     <h3 class="text-xl font-headline font-bold mb-3 text-white">Dedicated Point of Contact</h3>
                     <p class="text-slate-400 text-base leading-relaxed font-body">
@@ -183,9 +183,9 @@
                 </div>
 
                 <!-- CARD 4 -->
-                <div class="glass-morphism p-8 rounded-[1.75rem] border border-teal-brand/10 hover:border-teal-brand/40 transition-all duration-300 group" data-aos="fade-up">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-teal-brand/10 border border-teal-brand/30 flex items-center justify-center group-hover:bg-teal-brand/20 transition-all duration-300">
-                        <i data-lucide="file-check-2" class="w-7 h-7 text-teal-brand"></i>
+                <div class="glass-morphism p-8 rounded-[1.75rem] border border-brand-red/10 hover:border-brand-red/40 transition-all duration-300 group" data-aos="fade-up">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
+                        <i data-lucide="file-check-2" class="w-7 h-7 text-brand-red"></i>
                     </div>
                     <h3 class="text-xl font-headline font-bold mb-3 text-white">Clear Compliance Information</h3>
                     <p class="text-slate-400 text-base leading-relaxed font-body">
@@ -194,9 +194,9 @@
                 </div>
 
                 <!-- CARD 5 -->
-                <div class="glass-morphism p-8 rounded-[1.75rem] border border-teal-brand/10 hover:border-teal-brand/40 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="50">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-teal-brand/10 border border-teal-brand/30 flex items-center justify-center group-hover:bg-teal-brand/20 transition-all duration-300">
-                        <i data-lucide="receipt" class="w-7 h-7 text-teal-brand"></i>
+                <div class="glass-morphism p-8 rounded-[1.75rem] border border-brand-red/10 hover:border-brand-red/40 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="50">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
+                        <i data-lucide="receipt" class="w-7 h-7 text-brand-red"></i>
                     </div>
                     <h3 class="text-xl font-headline font-bold mb-3 text-white">Transparent Rates</h3>
                     <p class="text-slate-400 text-base leading-relaxed font-body">
@@ -205,9 +205,9 @@
                 </div>
 
                 <!-- CARD 6 -->
-                <div class="glass-morphism p-8 rounded-[1.75rem] border border-teal-brand/10 hover:border-teal-brand/40 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-teal-brand/10 border border-teal-brand/30 flex items-center justify-center group-hover:bg-teal-brand/20 transition-all duration-300">
-                        <i data-lucide="calendar-clock" class="w-7 h-7 text-teal-brand"></i>
+                <div class="glass-morphism p-8 rounded-[1.75rem] border border-brand-red/10 hover:border-brand-red/40 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-brand-red/10 border border-brand-red/30 flex items-center justify-center group-hover:bg-brand-red/20 transition-all duration-300">
+                        <i data-lucide="calendar-clock" class="w-7 h-7 text-brand-red"></i>
                     </div>
                     <h3 class="text-xl font-headline font-bold mb-3 text-white">Flexible Cover</h3>
                     <p class="text-slate-400 text-base leading-relaxed font-body">
@@ -218,7 +218,7 @@
             </div>
 
             <div class="w-full text-center mt-20">
-                <a class='inline-flex px-12 py-4 rounded-full border-2 border-teal-brand text-white font-bold text-sm tracking-widest uppercase hover:bg-teal-brand/10 transition-all' href='services.html'>VIEW ALL SERVICES</a>
+                <a class='inline-flex px-12 py-4 rounded-full border-2 border-brand-red text-white font-bold text-sm tracking-widest uppercase hover:bg-brand-red/10 transition-all' href='services.html'>VIEW ALL SERVICES</a>
             </div>
 
             <!-- Partner Section -->
@@ -235,20 +235,20 @@
                     <p class="text-lg text-slate-400 leading-relaxed">We aim to work as a transparent extension of your service's staffing function, not just another agency on your supplier list.</p>
                     <ul class="space-y-5">
                         <li class="flex items-start gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-brand/20 flex items-center justify-center flex-shrink-0">
-                                <div class="w-2.5 h-2.5 rounded-full bg-teal-brand"></div>
+                            <div class="mt-1 w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
+                                <div class="w-2.5 h-2.5 rounded-full bg-brand-red"></div>
                             </div>
                             <span class="text-lg text-slate-300">Clear communication throughout the booking process</span>
                         </li>
                         <li class="flex items-start gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-brand/20 flex items-center justify-center flex-shrink-0">
-                                <div class="w-2.5 h-2.5 rounded-full bg-teal-brand"></div>
+                            <div class="mt-1 w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
+                                <div class="w-2.5 h-2.5 rounded-full bg-brand-red"></div>
                             </div>
                             <span class="text-lg text-slate-300">Workers screened according to role and placement requirements</span>
                         </li>
                         <li class="flex items-start gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-brand/20 flex items-center justify-center flex-shrink-0">
-                                <div class="w-2.5 h-2.5 rounded-full bg-teal-brand"></div>
+                            <div class="mt-1 w-6 h-6 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
+                                <div class="w-2.5 h-2.5 rounded-full bg-brand-red"></div>
                             </div>
                             <span class="text-lg text-slate-300">Support for continuity of care through consistent, reliable staffing</span>
                         </li>
@@ -262,44 +262,44 @@
     </section>
 
     <!-- RISK MITIGATION Q&A -->
-    <section class="py-32 relative bg-navy-deep border-t border-teal-brand/10" data-aos="fade-up">
+    <section class="py-32 relative bg-navy-deep border-t border-brand-red/10" data-aos="fade-up">
         <div class="max-w-4xl mx-auto px-8 relative z-10">
             <div class="text-center mb-16">
-                <span class="text-teal-brand font-bold text-sm tracking-widest uppercase mb-4 block">Frequently Asked Questions</span>
+                <span class="text-brand-red font-bold text-sm tracking-widest uppercase mb-4 block">Frequently Asked Questions</span>
                 <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-white">Clear Answers, No Surprises.</h2>
             </div>
 
             <div class="space-y-6">
-                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-teal-brand/20 hover:border-teal-brand/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
+                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
                     <h3 class="text-2xl font-bold text-white mb-4 flex items-start gap-4">
-                        <i data-lucide="clock" class="text-teal-brand w-6 h-6 mt-1 flex-shrink-0"></i>
+                        <i data-lucide="clock" class="text-brand-red w-6 h-6 mt-1 flex-shrink-0"></i>
                         How quickly can TezCare provide a worker?
                     </h3>
                     <p class="text-lg text-slate-300 leading-relaxed pl-10 border-l border-white/10 ml-3">
                         Availability depends on the role, location, shift time, notice provided and whether a suitably screened worker is available. We review urgent requests promptly, but only confirm a placement once an appropriate worker has been identified.
                     </p>
                 </div>
-                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-teal-brand/20 hover:border-teal-brand/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
+                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
                     <h3 class="text-2xl font-bold text-white mb-4 flex items-start gap-4">
-                        <i data-lucide="shield-check" class="text-teal-brand w-6 h-6 mt-1 flex-shrink-0"></i>
+                        <i data-lucide="shield-check" class="text-brand-red w-6 h-6 mt-1 flex-shrink-0"></i>
                         How do you check your workers?
                     </h3>
                     <p class="text-lg text-slate-300 leading-relaxed pl-10 border-l border-white/10 ml-3">
                         Checks may include identity and right-to-work verification, employment history and references, DBS status, relevant training and, where applicable, professional registration. The checks completed depend on the role and your requirements.
                     </p>
                 </div>
-                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-teal-brand/20 hover:border-teal-brand/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
+                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
                     <h3 class="text-2xl font-bold text-white mb-4 flex items-start gap-4">
-                        <i data-lucide="refresh-cw" class="text-teal-brand w-6 h-6 mt-1 flex-shrink-0"></i>
+                        <i data-lucide="refresh-cw" class="text-brand-red w-6 h-6 mt-1 flex-shrink-0"></i>
                         What happens if a confirmed worker becomes unavailable?
                     </h3>
                     <p class="text-lg text-slate-300 leading-relaxed pl-10 border-l border-white/10 ml-3">
                         We let you know as soon as possible and make reasonable efforts to find a suitable replacement. While we can't guarantee a replacement will always be available, keeping you informed early is our priority.
                     </p>
                 </div>
-                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-teal-brand/20 hover:border-teal-brand/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
+                <div class="glass-morphism p-8 md:p-10 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-all duration-300 shadow-xl bg-[#0a1628]">
                     <h3 class="text-2xl font-bold text-white mb-4 flex items-start gap-4">
-                        <i data-lucide="receipt" class="text-teal-brand w-6 h-6 mt-1 flex-shrink-0"></i>
+                        <i data-lucide="receipt" class="text-brand-red w-6 h-6 mt-1 flex-shrink-0"></i>
                         How do I get your rates?
                     </h3>
                     <p class="text-lg text-slate-300 leading-relaxed pl-10 border-l border-white/10 ml-3">
@@ -330,35 +330,35 @@
 
             <!-- Column 2: Company -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Company</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Company</h4>
                 <ul class="space-y-4 text-sm">
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='about.html'>About Us</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='why-tezcare.html'>Why TezCare</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='contact.html'>Join the Roster</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='why-tezcare.html'>Clinical Audit</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='about.html'>About Us</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='why-tezcare.html'>Why TezCare</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='contact.html'>Join the Roster</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='why-tezcare.html'>Clinical Audit</a></li>
                 </ul>
             </div>
 
             <!-- Column 3: Services -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Services</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Services</h4>
                 <ul class="space-y-4 text-sm">
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Residential HCA</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Complex Care</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Emergency Cover</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Specialist Staffing</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Residential HCA</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Complex Care</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Emergency Cover</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Specialist Staffing</a></li>
                 </ul>
             </div>
 
             <!-- Column 4: Contact -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Contact</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Contact</h4>
                 <ul class="space-y-4 text-sm">
                     <li class="text-[#94A3B8] leading-[1.8]">
                         Suite 2.04, The Keep, Creech Castle, Bathpool, Taunton, Somerset - TA1 2DX.
                     </li>
                     <li>
-                        <a href="tel:+447553619872" class="text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all">+44 7553619872</a>
+                        <a href="tel:+447308441935" class="text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all">07308 441935</a>
                     </li>
                 </ul>
             </div>
@@ -370,11 +370,11 @@
             <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500">
                 <span>© 2026 TezCare.</span>
                 <div class="flex items-center gap-4">
-                    <a href="#" class="hover:text-teal-brand transition-all">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Privacy Policy</a>
                     <span>|</span>
-                    <a href="#" class="hover:text-teal-brand transition-all">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Terms of Service</a>
                     <span>|</span>
-                    <a href="#" class="hover:text-teal-brand transition-all">Cookie Policy</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Cookie Policy</a>
                 </div>
             </div>
             <p class="text-slate-500 text-sm font-medium text-right">Somerset's Clinical Staffing Partner</p>

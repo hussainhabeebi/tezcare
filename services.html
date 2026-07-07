@@ -18,11 +18,11 @@
         theme: {
           extend: {
             colors: {
-              "teal-brand": "#0D9488",
+              "brand-red": "#EB1922",
               "navy-brand": "#0f172a",
               "navy-deep": "#060d18",
               "navy-light": "#1e293b",
-              "primary": "#0D9488",
+              "primary": "#EB1922",
               "on-primary": "#ffffff",
               "surface": "#0f172a",
               "on-surface": "#ffffff",
@@ -41,13 +41,13 @@
         @layer utilities {
             .bg-navy-gradient { background: linear-gradient(180deg, #0A1628 0%, #060d18 100%); }
             .glass-morphism { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-            .text-glow { text-shadow: 0 0 20px rgba(13, 148, 136, 0.4); }
+            .text-glow { text-shadow: 0 0 20px rgba(235, 25, 34, 0.4); }
         }
     </style>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-[#0f172a] font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-teal-brand selection:text-white">
+<body class="bg-[#0f172a] font-body text-slate-200 leading-relaxed overflow-x-hidden selection:bg-brand-red selection:text-white">
 
 <nav class="fixed top-8 left-0 right-0 z-50 flex justify-center px-4">
     <div class="w-full max-w-6xl glass-morphism rounded-3xl md:rounded-full px-6 py-3 flex flex-col md:flex-row md:justify-between md:items-center shadow-2xl relative">
@@ -55,20 +55,20 @@
             <a class='flex flex-shrink-0 items-center' href='index.html'>
                 <img src="images/Tezcare Logo with Trademark.png" alt="TezCare" style="height: 44px;">
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-teal-brand transition-colors flex items-center">
+            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-brand-red transition-colors flex items-center">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
         </div>
         <div id="mobile-menu" class="hidden md:flex flex-col md:flex-row gap-6 md:gap-10 items-center mt-6 md:mt-0 pb-4 md:pb-0 w-full md:w-auto border-t border-white/10 md:border-t-0 pt-4 md:pt-0">
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='index.html'>Homepage</a>
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='about.html'>About</a>
-            <a class='text-teal-brand font-semibold text-sm transition-colors' href='services.html'>Service</a>
+            <a class='text-brand-red font-semibold text-sm transition-colors' href='services.html'>Service</a>
             <a class='text-slate-400 font-medium text-sm hover:text-white transition-colors' href='why-tezcare.html'>Why TezCare</a>
-            <button onclick="window.location.href='contact.html';" class="md:hidden w-full bg-teal-brand hover:bg-teal-600 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg shadow-teal-brand/20">
+            <button onclick="window.location.href='contact.html';" class="md:hidden w-full bg-brand-red hover:bg-red-600 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg shadow-brand-red/20">
                 Book A Staff
             </button>
         </div>
-        <button onclick="window.location.href='contact.html';" class="hidden md:block bg-teal-brand hover:bg-teal-600 text-white px-6 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-teal-brand/20 whitespace-nowrap">
+        <button onclick="window.location.href='contact.html';" class="hidden md:block bg-brand-red hover:bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-brand-red/20 whitespace-nowrap">
             Book A Staff
         </button>
     </div>
@@ -80,19 +80,19 @@
     <section id="services-hero" class="relative min-h-[85vh] flex flex-col justify-center bg-[#0f172a] overflow-hidden pb-16 pt-32">
         <div class="absolute inset-0 z-0 select-none pointer-events-none">
             <div class="absolute inset-0 topography-pattern opacity-40"></div>
-            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-brand/15 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4"></div>
-            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-brand/10 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4"></div>
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red/15 rounded-full blur-[140px] -translate-y-1/3 translate-x-1/4"></div>
+            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4"></div>
             <div class="hero-overlay-gradient absolute inset-0"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-8 relative z-10 w-full flex-grow flex flex-col justify-center">
 
             <div class="max-w-3xl text-left mb-16">
-                <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-teal-brand/20 border border-teal-brand/30 text-teal-brand text-xs font-bold uppercase tracking-widest mb-8 backdrop-blur-md">
+                <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-brand-red/20 border border-brand-red/30 text-brand-red text-xs font-bold uppercase tracking-widest mb-8 backdrop-blur-md">
                     Our Services
                 </span>
                 <h1 class="scroll-rotate-title text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold text-white leading-tight mb-8 tracking-tighter drop-shadow-xl">
-                    Comprehensive Facility Staffing.<br><span class="text-teal-400">Director-Led Compliance.</span>
+                    Comprehensive Facility Staffing.<br><span class="text-red-400">Director-Led Compliance.</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed font-body drop-shadow-lg font-medium">
                     TezCare doesn't just 'fill gaps.' We deploy Support Workers (HCAs) and Complex Care Specialists who are uniform-ready and 100% audit-compliant, guaranteed locally in the South West. We prioritize your CQC rating, every single shift.
@@ -100,8 +100,8 @@
             </div>
 
             <div class="text-center w-full mb-20 md:mb-24 mt-4 relative">
-                <div class="absolute inset-0 w-full h-full bg-teal-brand/10 blur-[100px] z-0 pointer-events-none"></div>
-                <a class='relative z-10 inline-flex px-10 py-5 rounded-full bg-teal-brand text-navy-deep font-black text-lg hover:bg-teal-400 transition-all shadow-[0_0_40px_rgba(13,148,136,0.6)] tracking-widest uppercase' href='index.html'>REQUEST HCA MATCHING (DIRECT LINE)</a>
+                <div class="absolute inset-0 w-full h-full bg-brand-red/10 blur-[100px] z-0 pointer-events-none"></div>
+                <a class='relative z-10 inline-flex px-10 py-5 rounded-full bg-brand-red text-navy-deep font-black text-lg hover:bg-red-400 transition-all shadow-[0_0_40px_rgba(235, 25, 34,0.6)] tracking-widest uppercase' href='index.html'>REQUEST HCA MATCHING (DIRECT LINE)</a>
             </div>
 
             <div class="w-full text-center relative mt-auto pb-4">
@@ -110,7 +110,7 @@
                 </div>
                 <div class="relative flex justify-center px-4">
                     <span class="bg-[#0f172a]/95 backdrop-blur-md px-6 py-3 text-white font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase max-w-5xl leading-loose rounded-full border border-white/10 shadow-2xl">
-                        WE ENSURE AUDIT-READY COMPLIANCE PACKS <span class="text-teal-brand mx-2 md:mx-4">||</span> DIRECTOR-LED VETTING PROTOCOLS <span class="text-teal-brand mx-2 md:mx-4">||</span> 30-MIN PRE-SHIFT ALERT <span class="text-teal-brand mx-2 md:mx-4">||</span> ZERO FRAUD GUARANTEE (VERIFIED DBS)
+                        WE ENSURE AUDIT-READY COMPLIANCE PACKS <span class="text-brand-red mx-2 md:mx-4">||</span> DIRECTOR-LED VETTING PROTOCOLS <span class="text-brand-red mx-2 md:mx-4">||</span> 30-MIN PRE-SHIFT ALERT <span class="text-brand-red mx-2 md:mx-4">||</span> ZERO FRAUD GUARANTEE (VERIFIED DBS)
                     </span>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                 <p class="text-white/70 text-sm font-body tracking-wider uppercase mb-4">
                     Transparent Compliance. Real-time Logistics. Explore the TezCare Standard below.
                 </p>
-                <i data-lucide="chevron-down" class="text-teal-brand w-6 h-6 animate-bounce opacity-80"></i>
+                <i data-lucide="chevron-down" class="text-brand-red w-6 h-6 animate-bounce opacity-80"></i>
             </div>
 
         </div>
@@ -131,10 +131,10 @@
              <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
                 <!-- Box 1 (Residential HCA) -->
-                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-teal-brand/20 hover:border-teal-brand/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-teal-brand/5 shadow-[0_0_20px_rgba(13,148,136,0.05)]">
-                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-teal-brand/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
-                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-teal-brand/20 rounded-full blur-[80px]"></div>
-                        <i data-lucide="clipboard-check" class="w-20 h-20 text-teal-brand relative z-10"></i>
+                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-brand-red/20 hover:border-brand-red/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-brand-red/5 shadow-[0_0_20px_rgba(235, 25, 34,0.05)]">
+                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-brand-red/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand-red/20 rounded-full blur-[80px]"></div>
+                        <i data-lucide="clipboard-check" class="w-20 h-20 text-brand-red relative z-10"></i>
                     </div>
                     <h3 class="text-2xl font-headline font-bold mb-4 text-white">Residential HCA</h3>
                     <p class="text-slate-400 text-lg leading-relaxed flex-grow">
@@ -143,10 +143,10 @@
                 </div>
 
                 <!-- Box 2 (Complex Care) -->
-                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-teal-brand/20 hover:border-teal-brand/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-teal-brand/5 shadow-[0_0_20px_rgba(13,148,136,0.05)]">
-                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-teal-brand/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
-                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-teal-brand/20 rounded-full blur-[80px]"></div>
-                        <i data-lucide="heart-pulse" class="w-20 h-20 text-teal-brand relative z-10"></i>
+                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-brand-red/20 hover:border-brand-red/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-brand-red/5 shadow-[0_0_20px_rgba(235, 25, 34,0.05)]">
+                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-brand-red/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-red/20 rounded-full blur-[80px]"></div>
+                        <i data-lucide="heart-pulse" class="w-20 h-20 text-brand-red relative z-10"></i>
                     </div>
                     <h3 class="text-2xl font-headline font-bold mb-4 text-white">Complex Care</h3>
                     <p class="text-slate-400 text-lg leading-relaxed flex-grow">
@@ -155,10 +155,10 @@
                 </div>
 
                 <!-- Box 3 (Emergency Cover) -->
-                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-teal-brand/20 hover:border-teal-brand/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-teal-brand/5 shadow-[0_0_20px_rgba(13,148,136,0.05)]">
-                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-teal-brand/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
-                        <div class="absolute -top-10 -left-10 w-40 h-40 bg-teal-brand/20 rounded-full blur-[80px]"></div>
-                        <i data-lucide="zap" class="w-20 h-20 text-teal-brand relative z-10"></i>
+                <div class="group p-8 md:p-10 rounded-[2rem] glass-morphism border border-brand-red/20 hover:border-brand-red/50 transition-all duration-500 flex flex-col h-full relative overflow-hidden bg-brand-red/5 shadow-[0_0_20px_rgba(235, 25, 34,0.05)]">
+                    <div class="w-full aspect-[4/5] rounded-[1.5rem] overflow-hidden mb-8 border border-white/10 shadow-lg group-hover:border-brand-red/40 transition-colors relative bg-gradient-to-br from-navy-brand to-navy-deep flex items-center justify-center">
+                        <div class="absolute -top-10 -left-10 w-40 h-40 bg-brand-red/20 rounded-full blur-[80px]"></div>
+                        <i data-lucide="zap" class="w-20 h-20 text-brand-red relative z-10"></i>
                     </div>
                     <h3 class="text-2xl font-headline font-bold mb-4 text-white">Emergency Cover</h3>
                     <p class="text-slate-400 text-lg leading-relaxed flex-grow">
@@ -171,39 +171,39 @@
     </section>
 
     <!-- 3. PERFORMANCE METRICS GATE -->
-    <section class="py-24 relative overflow-hidden bg-navy-deep border-t border-teal-brand/10">
+    <section class="py-24 relative overflow-hidden bg-navy-deep border-t border-brand-red/10">
         <div class="max-w-7xl mx-auto px-8 relative z-10">
-            <div class="glass-morphism p-12 md:p-20 rounded-[3rem] border border-teal-brand/20 shadow-[0_0_50px_rgba(13,148,136,0.1)] relative overflow-hidden">
+            <div class="glass-morphism p-12 md:p-20 rounded-[3rem] border border-brand-red/20 shadow-[0_0_50px_rgba(235, 25, 34,0.1)] relative overflow-hidden">
                 <div class="absolute inset-0 bg-[#0f172a] opacity-80 z-0 rounded-[3rem]"></div>
-                <div class="absolute -top-40 -left-40 w-96 h-96 bg-teal-brand/10 rounded-full blur-[100px] z-0"></div>
-                <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-teal-brand/10 rounded-full blur-[100px] z-0"></div>
+                <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-red/10 rounded-full blur-[100px] z-0"></div>
+                <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-brand-red/10 rounded-full blur-[100px] z-0"></div>
 
                 <div class="text-center mb-20 relative z-10">
-                    <span class="text-teal-brand font-bold text-sm tracking-widest uppercase mb-4 block">Execution Quality</span>
+                    <span class="text-brand-red font-bold text-sm tracking-widest uppercase mb-4 block">Execution Quality</span>
                     <h2 class="text-3xl md:text-5xl font-headline font-extrabold text-white">The TezCare Standard: By the Numbers.</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
                     <div class="text-center group">
-                        <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-teal-brand mb-4 drop-shadow-[0_0_15px_rgba(13,148,136,0.5)]">100%</div>
+                        <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-brand-red mb-4 drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">100%</div>
                         <h3 class="text-xl font-bold text-white mb-3 leading-tight">Audit-Ready<br>Compliance Packs</h3>
                     </div>
                     <div class="text-center group">
-                        <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-teal-brand mb-4 drop-shadow-[0_0_15px_rgba(13,148,136,0.5)]">30-Min</div>
+                        <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-brand-red mb-4 drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">30-Min</div>
                         <h3 class="text-xl font-bold text-white mb-3 leading-tight">Pre-Shift<br>Alert</h3>
                     </div>
                     <div class="text-center group">
-                        <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-teal-brand mb-4 drop-shadow-[0_0_15px_rgba(13,148,136,0.5)]">24/7</div>
+                        <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-brand-red mb-4 drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">24/7</div>
                         <h3 class="text-xl font-bold text-white mb-3 leading-tight">Director-Led<br>Vetting Protocols</h3>
                     </div>
                     <div class="text-center group">
-                        <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-teal-brand mb-4 drop-shadow-[0_0_15px_rgba(13,148,136,0.5)]">Zero</div>
-                        <h3 class="text-xl font-bold text-white mb-3 leading-tight">Fraud Guarantee<br><span class="text-teal-brand/70 font-medium text-sm">(Verified DBS)</span></h3>
+                        <div class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-brand-red mb-4 drop-shadow-[0_0_15px_rgba(235, 25, 34,0.5)]">Zero</div>
+                        <h3 class="text-xl font-bold text-white mb-3 leading-tight">Fraud Guarantee<br><span class="text-brand-red/70 font-medium text-sm">(Verified DBS)</span></h3>
                     </div>
                 </div>
 
                 <div class="mt-20 text-center relative z-10">
-                    <a class='inline-flex px-12 py-5 rounded-full bg-teal-brand text-white font-bold text-lg hover:bg-teal-600 transition-all shadow-[0_0_30px_rgba(13,148,136,0.5)] border border-teal-brand/50 uppercase tracking-wide' href='index.html'>Check 24/7 Availability</a>
+                    <a class='inline-flex px-12 py-5 rounded-full bg-brand-red text-white font-bold text-lg hover:bg-red-600 transition-all shadow-[0_0_30px_rgba(235, 25, 34,0.5)] border border-brand-red/50 uppercase tracking-wide' href='index.html'>Check 24/7 Availability</a>
                 </div>
             </div>
         </div>
@@ -224,10 +224,10 @@
                 <div class="relative group order-1 lg:order-2">
                     <div class="rounded-[2.5rem] relative z-10 w-full aspect-[4/3] shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-white/5 bg-gradient-to-br from-navy-brand to-navy-deep overflow-hidden flex items-center justify-center">
                         <div class="absolute inset-0 topography-pattern opacity-30"></div>
-                        <div class="absolute -top-16 -right-16 w-64 h-64 bg-teal-brand/20 rounded-full blur-[100px]"></div>
-                        <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-teal-brand/10 rounded-full blur-[100px]"></div>
-                        <div class="relative z-10 w-32 h-32 rounded-full bg-teal-brand/10 border-2 border-teal-brand flex items-center justify-center shadow-[0_0_40px_rgba(13,148,136,0.4)]">
-                            <i data-lucide="heart-handshake" class="w-16 h-16 text-teal-brand"></i>
+                        <div class="absolute -top-16 -right-16 w-64 h-64 bg-brand-red/20 rounded-full blur-[100px]"></div>
+                        <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-brand-red/10 rounded-full blur-[100px]"></div>
+                        <div class="relative z-10 w-32 h-32 rounded-full bg-brand-red/10 border-2 border-brand-red flex items-center justify-center shadow-[0_0_40px_rgba(235, 25, 34,0.4)]">
+                            <i data-lucide="heart-handshake" class="w-16 h-16 text-brand-red"></i>
                         </div>
                     </div>
                 </div>
@@ -255,35 +255,35 @@
 
             <!-- Column 2: Company -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Company</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Company</h4>
                 <ul class="space-y-4 text-sm">
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='about.html'>About Us</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='why-tezcare.html'>Why TezCare</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='contact.html'>Join the Roster</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='why-tezcare.html'>Clinical Audit</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='about.html'>About Us</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='why-tezcare.html'>Why TezCare</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='contact.html'>Join the Roster</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='why-tezcare.html'>Clinical Audit</a></li>
                 </ul>
             </div>
 
             <!-- Column 3: Services -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Services</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Services</h4>
                 <ul class="space-y-4 text-sm">
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Residential HCA</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Complex Care</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Emergency Cover</a></li>
-                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all' href='services.html'>Specialist Staffing</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Residential HCA</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Complex Care</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Emergency Cover</a></li>
+                    <li><a class='text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all' href='services.html'>Specialist Staffing</a></li>
                 </ul>
             </div>
 
             <!-- Column 4: Contact -->
             <div>
-                <h4 class="text-teal-brand font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Contact</h4>
+                <h4 class="text-brand-red font-bold text-[0.9rem] mb-6 uppercase tracking-widest">Contact</h4>
                 <ul class="space-y-4 text-sm">
                     <li class="text-[#94A3B8] leading-[1.8]">
                         Suite 2.04, The Keep, Creech Castle, Bathpool, Taunton, Somerset - TA1 2DX.
                     </li>
                     <li>
-                        <a href="tel:+447553619872" class="text-[#94A3B8] leading-[1.8] hover:text-teal-brand transition-all">+44 7553619872</a>
+                        <a href="tel:+447308441935" class="text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all">07308 441935</a>
                     </li>
                 </ul>
             </div>
@@ -295,11 +295,11 @@
             <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500">
                 <span>© 2026 TezCare.</span>
                 <div class="flex items-center gap-4">
-                    <a href="#" class="hover:text-teal-brand transition-all">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Privacy Policy</a>
                     <span>|</span>
-                    <a href="#" class="hover:text-teal-brand transition-all">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Terms of Service</a>
                     <span>|</span>
-                    <a href="#" class="hover:text-teal-brand transition-all">Cookie Policy</a>
+                    <a href="#" class="hover:text-brand-red transition-all">Cookie Policy</a>
                 </div>
             </div>
             <p class="text-slate-500 text-sm font-medium text-right">Somerset's Clinical Staffing Partner</p>
