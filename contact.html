@@ -95,6 +95,25 @@
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-[#7A1015]"></div>
 
                 <form id="contact-form" action="https://formspree.io/f/mpqorwzb" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="manager-name" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Manager Name *</label>
+                            <input type="text" id="manager-name" name="Manager Name" required placeholder="Your full name"
+                                   class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all placeholder:text-slate-500">
+                        </div>
+                        <div>
+                            <label for="work-email" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Work Email *</label>
+                            <input type="email" id="work-email" name="Work Email" required placeholder="you@carehome.co.uk"
+                                   class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all placeholder:text-slate-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="contact-number" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Contact Number *</label>
+                        <input type="tel" id="contact-number" name="Contact Number" required placeholder="e.g. 07123 456789"
+                               class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all placeholder:text-slate-500">
+                    </div>
+
                     <div>
                         <label for="care-home-name" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Care Home / Facility Name *</label>
                         <input type="text" id="care-home-name" name="Care Home Name" required placeholder="Enter facility name"
@@ -116,6 +135,8 @@
                             <option value="Registered Mental Nurse (RMN)" class="text-navy-brand">Registered Mental Nurse (RMN)</option>
                             <option value="Healthcare Assistant (HCA)" class="text-navy-brand">Healthcare Assistant (HCA)</option>
                             <option value="Support Worker" class="text-navy-brand">Support Worker</option>
+                            <option value="Chef" class="text-navy-brand">Chef</option>
+                            <option value="Kitchen Assistant" class="text-navy-brand">Kitchen Assistant</option>
                             <option value="Multiple Roles" class="text-navy-brand">Multiple Roles</option>
                         </select>
                     </div>
@@ -127,10 +148,29 @@
                     </div>
 
                     <div>
+                        <span class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Booking Type *</span>
+                        <div class="flex gap-3">
+                            <label class="flex-1 flex items-center justify-center gap-2 bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white cursor-pointer has-[:checked]:border-brand-red has-[:checked]:bg-brand-red/10 transition-all">
+                                <input type="radio" name="Booking Type" value="Normal" checked class="accent-brand-red">
+                                Normal
+                            </label>
+                            <label class="flex-1 flex items-center justify-center gap-2 bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white cursor-pointer has-[:checked]:border-brand-red has-[:checked]:bg-brand-red/10 transition-all">
+                                <input type="radio" name="Booking Type" value="Urgent" class="accent-brand-red">
+                                Urgent
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
                         <label for="additional-notes" class="block text-sm font-bold text-white mb-2 uppercase tracking-wide">Special Requirements / Notes</label>
                         <textarea id="additional-notes" name="Additional Notes" rows="4" placeholder="Any specific skills required, e.g. MAPA trained..."
                                   class="w-full bg-navy-light border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all placeholder:text-slate-500 resize-y"></textarea>
                     </div>
+
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input type="checkbox" id="consent" name="Consent" required class="mt-1 w-4 h-4 accent-brand-red">
+                        <span class="text-sm text-slate-400 leading-snug">I consent to TezCare storing and using my details to respond to this staffing request. *</span>
+                    </label>
 
                     <div class="pt-4">
                         <button type="submit" class="w-full bg-brand-red hover:bg-red-600 text-white rounded-xl font-bold text-lg py-5 transition-all shadow-lg shadow-brand-red/20 hover:-translate-y-1">
@@ -160,7 +200,7 @@
                 </a>
                 <p class="text-[#94A3B8] font-bold text-sm tracking-wide">Honouring Humanity.</p>
                 <p class="text-[#94A3B8] text-sm leading-[1.8]">
-                    Director-led clinical staffing. Operating to CQC Fundamental Standards.
+                    Supporting care providers with CQC-aligned staffing documentation and safe recruitment practices.
                 </p>
             </div>
 
@@ -195,6 +235,9 @@
                     </li>
                     <li>
                         <a href="tel:+447308441935" class="text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all">07308 441935</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@tezcare.uk" class="text-[#94A3B8] leading-[1.8] hover:text-brand-red transition-all">info@tezcare.uk</a>
                     </li>
                 </ul>
             </div>
